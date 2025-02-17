@@ -242,37 +242,26 @@ body {
     /* Cor do ícone (branca) */
 }
 
-/* Efeito de hover no ícone */
 .search-button-icon:hover svg {
     fill: #1392e7;
-    /* Cor azul mais escura ao passar o mouse */
 }
 
-/* Contêiner da logo */
-.logo-container {
-    position: absolute; /* Logo fica fixa em relação ao elemento pai */
-    top: 65%; /* Distância do topo da tela (ajustável) */
-    right: 20%; /* Distância da direita da tela (ajustável) */
-    z-index: 0; /* Coloca o contêiner atrás, mas em frente à imagem de fundo */
-    pointer-events: none; /* Não interfere nos cliques */
-}
-
-/* Logo fixa */
 .fixed-logo {
-    width: 150px; /* Tamanho ajustável */
+    width: 150px;
     height: 150px;
-    top: 25px;
-    left: 25px;
-    z-index: 2; /* Garante que a fixed-logo fique à frente */
-    position: relative; /* Para aplicar o z-index corretamente */
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 100;
 }
 
-/* Logo que se move com o scroll */
 .scrolling-logo {
-    position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 1; /* Fica atrás da fixed-logo */
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
 }
 
 .foto-background {
@@ -281,12 +270,75 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2; /* Coloca a imagem atrás de tudo */
+    z-index: -2;
+    /* Coloca a imagem atrás de tudo */
 }
 
 .background-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Faz a imagem cobrir todo o espaço */
-    opacity: 0.5; /* Ajuste se quiser mais transparência */
+    object-fit: cover;
+    /* Faz a imagem cobrir todo o espaço */
+    opacity: 0.5;
+    /* Ajuste se quiser mais transparência */
+}
+
+/* Garante que o carrossel ocupe o espaço corretamente */
+.swiper-container {
+    position: relative;
+    /* Define um contexto para os botões */
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Posiciona os botões dentro do carrossel */
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    /* Cor branca para melhor visibilidade */
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    /* Fundo escuro semi-transparente */
+    border-radius: 50%;
+    position: absolute;
+    /* Para posicionar dentro do carrossel */
+    top: 50%;
+    /* Centraliza verticalmente */
+    transform: translateY(-50%);
+    /* Ajuste fino na centralização */
+    z-index: 10;
+    /* Mantém os botões sobre as imagens */
+}
+
+/* Botão da direita */
+.swiper-button-next {
+    right: 10px;
+    /* Alinha à direita */
+}
+
+/* Botão da esquerda */
+.swiper-button-prev {
+    left: 10px;
+    /* Alinha à esquerda */
 }
