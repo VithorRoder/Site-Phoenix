@@ -1,0 +1,292 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    background: linear-gradient(to bottom, #242020, #3f3939);
+    /* Gradiente escuro */
+    color: white;
+    height: 100vh;
+    padding-top: 80px;
+    /* Para não cobrir o conteúdo */
+    text-align: center;
+    position: relative;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: center;
+    /* Centraliza o conteúdo */
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    background: transparent;
+    transition: background 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    left: 20px;
+    position: relative;
+    /* Removendo absolute para alinhar melhor */
+    margin-right: 22px;
+    /* Reduz a distância entre a logo e o menu */
+}
+
+.logo img {
+    height: 50px;
+    /* Ajuste conforme necessário */
+    width: auto;
+}
+
+/* Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00;
+}
+
+/* Botão Hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Efeito no Scroll */
+.header.scrolled {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Estilo do conteúdo */
+.content {
+    padding: 50px;
+    font-size: 20px;
+}
+
+/* Conteúdo longo para testar o scroll */
+.long-content {
+    height: 1500px;
+    /* Garante um scroll longo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Estilos do rodapé */
+.footer {
+    background-color: #222;
+    /* Cor de fundo */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #ffcc00;
+    /* Cor dos links */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline;
+}
+
+.footer-links li a {
+    margin: 0 15px;
+}
+
+/* Contêiner geral do campo de pesquisa */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+/* Contêiner do campo de pesquisa */
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 50px;
+}
+
+/* Campo de texto */
+.search-input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+/* Foco no campo de texto */
+.search-input:focus {
+    border: 2px solid #ffffff;
+    /* Cor de destaque */
+}
+
+/* Contêiner do ícone da lupa */
+.search-icon-container {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Estilo do botão (ícone da lupa) */
+.search-button-icon {
+    background-color: #98e210;
+    /* Cor verde */
+    border: none;
+    padding: 8px;
+    /* Ajuste o valor conforme necessário para o tamanho da bola */
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* Tornar o fundo circular */
+}
+
+/* Ícone da lupa */
+.search-button-icon svg {
+    width: 16px;
+    /* Ajuste o tamanho do ícone */
+    height: 16px;
+    /* Ajuste o tamanho do ícone */
+    fill: white;
+    /* Cor do ícone (branca) */
+}
+
+/* Efeito de hover no ícone */
+.search-button-icon:hover svg {
+    fill: #1392e7;
+    /* Cor azul mais escura ao passar o mouse */
+}
+
+/* Contêiner da logo */
+.logo-container {
+    position: absolute; /* Logo fica fixa em relação ao elemento pai */
+    top: 65%; /* Distância do topo da tela (ajustável) */
+    right: 20%; /* Distância da direita da tela (ajustável) */
+    z-index: 0; /* Coloca o contêiner atrás, mas em frente à imagem de fundo */
+    pointer-events: none; /* Não interfere nos cliques */
+}
+
+/* Logo fixa */
+.fixed-logo {
+    width: 150px; /* Tamanho ajustável */
+    height: 150px;
+    top: 25px;
+    left: 25px;
+    z-index: 2; /* Garante que a fixed-logo fique à frente */
+    position: relative; /* Para aplicar o z-index corretamente */
+}
+
+/* Logo que se move com o scroll */
+.scrolling-logo {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 1; /* Fica atrás da fixed-logo */
+}
+
+.foto-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Coloca a imagem atrás de tudo */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço */
+    opacity: 0.5; /* Ajuste se quiser mais transparência */
+}
