@@ -313,8 +313,8 @@ body {
     height: auto;
     margin: auto;
     overflow: hidden;
-    margin-bottom: 320px;
-    margin-top: 110px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .swiper-wrapper {
@@ -355,7 +355,6 @@ body {
     left: 10px;
 }
 
-/* Estilo do fundo Parallax */
 .parallax {
     background-image: url('https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     height: 18vh;
@@ -365,11 +364,101 @@ body {
     background-attachment: fixed;
 }
 
-/* Estilo do conteúdo */
 .content02 {
-    padding: 50px;
+    margin-top: 200px;
     font-size: 20px;
     background-color: transparent;
     color: #ffffff;
     text-align: center;
+}
+
+/* Painel Par */
+.panelPar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 5px auto;
+    margin-right: 180px;
+    width: 40%;
+    transform: translateX(150px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    flex-direction: row-reverse;
+}
+
+.panelPar img {
+    width: 340px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 150px;
+}
+
+.panelPar.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Painel Impar */
+.panelImpar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    border-radius: 15px;
+    margin: 5px auto;
+    margin-left: 180px;
+    width: 40%;
+    transform: translateX(-150px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.panelImpar img {
+    width: 340px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 150px;
+}
+
+.panelImpar.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 1200px) {
+    .panelPar {
+        flex-direction: column; /* Coloca o conteúdo em coluna */
+        width: 90%; /* Reduz a largura do painel */
+        transform: translateX(0); /* Remove o deslocamento */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+
+    .panelPar img {
+        width: 80%; /* Ajusta a largura da imagem para caber na tela */
+        margin-top: 20px; /* Diminui a margem superior da imagem */
+    }
+
+    .panelPar .text {
+        margin-left: 0; /* Remove a margem à esquerda do texto */
+        text-align: center; /* Centraliza o texto */
+    }
+}
+
+@media (max-width: 1200px) {
+    .panelImpar {
+        flex-direction: column; /* Coloca o conteúdo em coluna */
+        width: 90%; /* Reduz a largura do painel */
+        transform: translateX(0); /* Remove o deslocamento */
+        margin-top: 20px; /* Ajusta a margem superior */
+    }
+
+    .panelImpar img {
+        width: 80%; /* Ajusta a largura da imagem para caber na tela */
+        margin-top: 20px; /* Diminui a margem superior da imagem */
+    }
+
+    .panelImpar .text {
+        margin-left: 0; /* Remove a margem à esquerda do texto */
+        text-align: center; /* Centraliza o texto */
+    }
 }
