@@ -102,7 +102,6 @@ body {
     }
 }
 
-/* Conteúdo longo para testar o scroll */
 .long-content {
     flex-grow: 2;
     padding: 50px;
@@ -112,7 +111,6 @@ body {
     justify-content: center;
 }
 
-/* Estilos do rodapé */
 .footer {
     background-color: #222;
     color: white;
@@ -256,34 +254,26 @@ body {
     background-attachment: fixed;
 }
 
-.content02 {
-    margin-top: 200px;
-    font-size: 20px;
-    background-color: transparent;
-    color: #ffffff;
-    text-align: center;
-}
-
 /* Painel Par */
 .panelPar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    border-radius: 15px;
-    margin: 5px auto;
-    margin-right: 180px;
-    width: 40%;
+    border-radius: 5vw;
+    margin: 5vw auto;
+    margin-right: 18vw;
+    width: 35%;
     transform: translateX(150px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     flex-direction: row-reverse;
 }
 
 .panelPar img {
-    width: 340px;
+    width: 16vw;
     height: auto;
-    border-radius: 15px;
-    margin-top: 150px;
+    border-radius: 2vw;
+    margin-top: 5vw;
 }
 
 .panelPar.visible {
@@ -297,19 +287,19 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    border-radius: 15px;
-    margin: 5px auto;
-    margin-left: 180px;
-    width: 40%;
+    border-radius: 5vw;
+    margin: 5vw auto;
+    margin-left: 18vw;
+    width: 35%;
     transform: translateX(-150px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .panelImpar img {
-    width: 340px;
+    width: 16vw;
     height: auto;
-    border-radius: 15px;
-    margin-top: 150px;
+    border-radius: 2vw;
+    margin-top: 5vw;
 }
 
 .panelImpar.visible {
@@ -325,7 +315,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 50%;
         transform: translateX(20px);
         margin: 20px auto;
         text-align: center;
@@ -333,7 +323,7 @@ body {
 
     .panelPar img,
     .panelImpar img {
-        width: 60%;
+        width: 40%;
         max-width: 300px;
         height: auto;
         margin-top: 20px;
