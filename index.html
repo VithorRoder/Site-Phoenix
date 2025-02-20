@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Gráfica Phoenix</title>
     <link rel="icon" href="Images/logo.png" type="image/png">
     <!-- Vinculando o arquivo CSS -->
@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
-<body>
-
-    <div class="header-panel">
-        <img src="Images/tometome.svg" alt="Ícone" style="width: 217px">
-    </div>
+ <body>
 
     <header class="header" id="header">
         <ul class="nav-menu">
@@ -34,41 +30,12 @@
 
     <div class="foto-background"></div>
 
-    <div class="search-container">
-        <div data-clicked="false" class="search-input-container">
-            <input type="text" placeholder="Qual produto você está procurando?" data-testid="home-search"
-                class="search-input">
-            <div class="search-icon-container">
-                <div class="search-icon-wrapper">
-                    <button data-testid="home-search-button-icon" class="search-button-icon" aria-disabled="false">
-                        <div class="search-icon-svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="23" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M17.205 15.952 21 19.746 19.746 21l-3.794-3.795a7.94 7.94 0 0 1-4.977 1.745A7.98 7.98 0 0 1 3 10.975 7.98 7.98 0 0 1 10.975 3a7.98 7.98 0 0 1 7.975 7.975 7.94 7.94 0 0 1-1.745 4.977m-1.778-.658a6.18 6.18 0 0 0 1.75-4.32 6.2 6.2 0 0 0-6.202-6.202 6.2 6.2 0 0 0-6.203 6.203 6.2 6.2 0 0 0 6.203 6.202 6.18 6.18 0 0 0 4.32-1.75z">
-                                </path>
-                            </svg>
-                        </div>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide"><img
-                    src="https://colordigital.com.br/wp-content/uploads/2024/08/03_arquitetoplotter.jpg"
-                    alt="Arquitetura"></div>
-            <div class="swiper-slide"><img
-                    src="https://colordigital.com.br/wp-content/uploads/2025/01/05_volta_as_aulas.jpg"
-                    alt="Volta às aulas"></div>
-            <div class="swiper-slide"><img
-                    src="https://colordigital.com.br/wp-content/uploads/2024/07/banner_m2banner.jpg" alt="Banner M2">
-            </div>
-            <div class="swiper-slide"><img
-                    src="https://colordigital.com.br/wp-content/uploads/2020/01/grafica-em-sp.jpg" alt="Gráfica SP">
-            </div>
+            <div class="swiper-slide"><img src="Images/Anuncio01.svg" alt="Anúncio 01"></div>
+            <div class="swiper-slide"><img src="Images/Anuncio02.svg" alt="Anúncio 02"></div>
+            <div class="swiper-slide"><img src="Images/Anuncio03.svg" alt="Anúncio 03"></div>
+            <div class="swiper-slide"><img src="Images/Anuncio04.svg" alt="Anúncio 04"></div>
         </div>
 
         <div class="swiper-button-next"></div>
@@ -141,6 +108,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-</body>
+ </body>
 
 </html>
