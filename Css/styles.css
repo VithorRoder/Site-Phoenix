@@ -14,6 +14,10 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    max-width: 80vw;
+    /* Deixa 10vw de espaço em cada lado */
+    margin: 0 auto;
+    /* Centraliza o body na tela */
 }
 
 /* Cabeçalho */
@@ -172,7 +176,6 @@ body {
     }
 }
 
-
 .foto-background {
     position: absolute;
     top: 0;
@@ -193,7 +196,7 @@ body {
     position: absolute;
     width: 75vw;
     overflow: hidden;
-    margin-left: 12.5vw;
+    margin-left: 2.41vw;
     margin-top: 2vw;
 }
 
@@ -236,6 +239,39 @@ body {
 }
 
 .parallax {
+    background-image: url('https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(50px); /* Começa mais abaixo */
+    }
+    to {
+        opacity: 1; /* Torna visível */
+        transform: translateY(0); /* Volta para a posição normal */
+    }
+}
+
+.parallax h1 {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 3rem; /* Ajusta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Efeito de sombra */
+    opacity: 0; /* Começa invisível */
+}
+
+.parallax2 {
     background-image: url('https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     height: 50vw;
     background-position: center;

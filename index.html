@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
- <body>
+<body>
 
     <header class="header" id="header">
         <ul class="nav-menu">
@@ -26,7 +26,11 @@
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
 
-    <div class="parallax"></div>
+    <div class="parallax">
+        <h1>Bem Vindo a Gráfica
+            Phoenix
+        </h1>
+    </div>
 
     <div class="foto-background"></div>
 
@@ -84,6 +88,8 @@
         </div>
     </div>
 
+    <div class="parallax2"></div>
+
     <footer class="footer">
         <p>&copy; 2025 Gráfica Phoenix. Todos os direitos reservados.</p>
         <ul class="footer-links">
@@ -92,6 +98,17 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            }, 100); // Pequeno delay para evitar conflito
+    
+            let title = document.querySelector(".parallax h1");
+            title.style.animation = "fadeInUp 1.5s ease-out forwards";
+        });
+    </script>
 
     <!-- Vinculando o arquivo JS -->
     <script src="JavaScript/rotateLogo.js"></script>
@@ -103,6 +120,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- </body>
+</body>
 
 </html>
