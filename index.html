@@ -100,14 +100,7 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            setTimeout(() => {
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            }, 100); // Pequeno delay para evitar conflito
-    
-            let title = document.querySelector(".parallax h1");
-            title.style.animation = "fadeInUp 1.5s ease-out forwards";
-        });
+        window.history.scrollRestoration = "manual"; // Evita que o navegador lembre a posição do scroll
     </script>
 
     <!-- Vinculando o arquivo JS -->
