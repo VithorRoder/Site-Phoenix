@@ -137,11 +137,11 @@ body {
 }
 
 .fixed-logo {
-    width: 7vw;
-    height: 7vw;
+    width: 6.8vw;
+    height: 6.8vw;
     position: fixed;
-    bottom: 2.5vw;
-    right: 2.5vw;
+    bottom: 2.6vw;
+    right: 2.6vw;
     z-index: 100;
 }
 
@@ -312,6 +312,15 @@ body {
     background-attachment: fixed;
 }
 
+.parallax3 {
+    background-image: url('https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* Painel Par */
 .panelPar {
     display: flex;
@@ -388,4 +397,47 @@ body {
     opacity: 70%;
     margin-top: 2.5vw;
     margin-left: 2vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding: 3vw;
+}
+
+.column {
+    text-align: center;
+    width: 30%;
+}
+
+.column h2 {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+.square-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    justify-content: center;
+}
+
+.square {
+    width: 6vw;
+    height: 6vw;
+    background-color: #ff5733;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    border-radius: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    color: white;
+    font-weight: bold;
+}
+
+.square:hover {
+    transform: translateY(-10px) rotate(10deg);
+    background-color: #33ff57;
 }
