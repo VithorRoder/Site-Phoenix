@@ -321,8 +321,8 @@ body {
     border-radius: 5vw;
     margin: 5vw auto;
     margin-right: 5vw;
-    width: 35%;
-    transform: translateX(150px);
+    width: 50vw;
+    transform: translateX(10vw);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     flex-direction: row-reverse;
 }
@@ -339,10 +339,15 @@ body {
     transform: translateX(0);
 }
 
-.panelPar .text{
+.panelPar .text h3 {
+    font-size: 2.2vw;
+    margin-top: 2.5vw;
+}
+
+.panelPar .text p {
+    font-size: 1.3vw;
     opacity: 70%;
-    font-size: 1.8vw;
-    margin-right: 3vw;
+    margin-top: 2.5vw;
 }
 
 /* Painel Impar */
@@ -353,8 +358,8 @@ body {
     border-radius: 5vw;
     margin: 5vw auto;
     margin-left: 5vw;
-    width: 35%;
-    transform: translateX(-150px);
+    width: 50vw;
+    transform: translateX(-10vw);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
@@ -370,8 +375,13 @@ body {
     transform: translateX(0);
 }
 
-.panelImpar .text{
+.panelImpar .text h3 {
+    font-size: 2.2vw;
+    margin-top: 2.5vw;
+}
+
+.panelImpar .text p {
+    font-size: 1.3vw;
     opacity: 70%;
-    font-size: 1.8vw;
-    margin-left: 3vw;
+    margin-top: 2.5vw;
 }
