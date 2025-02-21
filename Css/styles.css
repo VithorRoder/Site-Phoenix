@@ -321,11 +321,16 @@ body {
     transform: translateX(0);
 }
 
+.panelPar .text{
+    opacity: 70%;
+    font-size: 1.8vw;
+    margin-right: 3vw;
+}
+
 /* Painel Impar */
 .panelImpar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: transparent;
     border-radius: 5vw;
     margin: 5vw auto;
@@ -347,32 +352,8 @@ body {
     transform: translateX(0);
 }
 
-@media (max-width: 1600px) {
-
-    .panelPar,
-    .panelImpar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 50%;
-        transform: translateX(20px);
-        margin: 20px auto;
-        text-align: center;
-    }
-
-    .panelPar img,
-    .panelImpar img {
-        width: 40%;
-        max-width: 300px;
-        height: auto;
-        margin-top: 20px;
-    }
-
-    .panelPar .text,
-    .panelImpar .text {
-        width: 80%;
-        text-align: center;
-        margin-top: 10px;
-    }
+.panelImpar .text{
+    opacity: 70%;
+    font-size: 1.8vw;
+    margin-left: 3vw;
 }
