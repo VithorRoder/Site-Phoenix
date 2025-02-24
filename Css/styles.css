@@ -14,8 +14,8 @@
 }
 
 body {
-    background-color: #2e2e2e;
-    background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+    background-color: #201f1f;
+    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
     color: white;
     text-align: center;
     position: relative;
@@ -493,6 +493,7 @@ body {
     font-size: 1.1vw;
     color: white;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .square img {
@@ -506,7 +507,7 @@ body {
 
 .square:hover {
     transform: translateY(-10px) rotate(10deg);
-    background-color: #33ff57;
+    background-color: #2bc8ce81;
 }
 
 .square:hover img {
@@ -516,3 +517,98 @@ body {
 .square:hover span {
     opacity: 0;
 }
+
+.orcamento-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2vw;
+    margin-top: 3vw;
+}
+
+.orcamento-title {
+    font-size: 3.5vw;
+    margin-left: 15.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+    margin-top: 4vw;
+}
+
+.orcamento-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9vw;
+    width: 20vw;
+    margin-bottom: 5vw;
+    margin-right: 4vw;
+}
+
+.orcamento-form input,
+.orcamento-form textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.7vw;
+    padding: 0.7vw;
+    background-color: #ccc;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: 300ms ease-in-out;
+    margin-top: 0.5vw;
+}
+
+.orcamento-form input {
+    height: 2.4vw;
+}
+
+.orcamento-form textarea {
+    height: 7vw;
+    margin-top: 2vw;
+}
+
+.orcamento-form input:focus,
+.orcamento-form textarea:focus {
+    background-color: white;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 15px #969696, -5px -5px 15px #ffffff;
+}
+
+button {
+    position: relative;
+    font-size: 1.2vw;
+    padding: 0.7em 1.4em;
+    background-color: #14ff3b60;
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    color: #DEDEDE;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    margin-top: 2vw;
+  }
+  
+  button::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(33,33,33,1) 0%, rgba(33,33,33,1) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 60%);
+    border-radius: 0 0 0.5em 0;
+    box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+  }
+  
+  button:hover::before {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  
+  button:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
+    transform: translate(0.1em, 0.1em);
+  }
