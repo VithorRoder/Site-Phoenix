@@ -13,21 +13,18 @@
     font-style: normal;
 }
 
-/* Fundo da página */
 body {
-    background: linear-gradient(360deg, black, white);
+    background-image: url("http://www.transparenttextures.com/patterns/black-paper.png");
+    background-color: #1d1b1b;
     color: white;
     text-align: center;
     position: relative;
     display: flex;
     flex-direction: column;
     max-width: 80vw;
-    /* Deixa 10vw de espaço em cada lado */
     margin: 0 auto;
-    /* Centraliza o body na tela */
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     justify-content: center;
@@ -42,7 +39,6 @@ body {
     z-index: 1000;
 }
 
-/* Menu */
 .nav-menu {
     display: flex;
     list-style: none;
@@ -64,7 +60,6 @@ body {
     color: #52a4ca;
 }
 
-/* Botão Hambúrguer */
 .menu-toggle {
     display: none;
     font-size: 32px;
@@ -420,27 +415,66 @@ body {
 }
 
 .containerSquares {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     justify-content: center;
-    gap: 4vw;
-    padding: 3vw;
+    margin-left: 10.5vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
-.column {
+.column01 {
     text-align: center;
-    width: 30%;
+    width: 70%;
+    margin-bottom: 2vw;
 }
 
-.column h2 {
+.column01 h2 {
     font-size: 2.1vw;
-    margin-bottom: 1vw;
     font-family: "Eurostile", sans-serif;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
+}
+
+.column02 {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 2vw;
+}
+
+.column02 h2 {
+    font-size: 2.1vw;
+    font-family: "Eurostile", sans-serif;
+    margin-bottom: 2vw;
+}
+
+.column03 {
+    text-align: center;
+    width: 70%;
+}
+
+.column03 h2 {
+    font-size: 2.1vw;
+    font-family: "Eurostile", sans-serif;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+}
+
+.column04 {
+    text-align: center;
+    width: 70%;
+}
+
+.column04 h2 {
+    font-size: 2.1vw;
+    font-family: "Eurostile", sans-serif;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
 }
 
 .square-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     gap: 1vw;
     justify-content: center;
 }
@@ -448,15 +482,15 @@ body {
 .square {
     position: relative;
     overflow: hidden;
-    width: 6vw;
-    height: 6vw;
+    width: 7vw;
+    height: 7vw;
     background-color: #ff5733;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
     border-radius: 0.5vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     color: white;
     font-weight: bold;
 }
