@@ -111,7 +111,8 @@ body {
 }
 
 .footer {
-    background-color: #222;
+    background-color: #0f0206;
+    background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
     color: white;
     padding: 40px;
     text-align: center;
@@ -146,8 +147,8 @@ body {
     width: 6.8vw;
     height: 6.8vw;
     position: fixed;
-    bottom: 2.6vw;
-    right: 2.6vw;
+    bottom: 2.65vw;
+    right: 2.65vw;
     z-index: 100;
     cursor: pointer;
 }
@@ -199,22 +200,6 @@ body {
         right: 1.5vw;
         z-index: 99;
     }
-}
-
-.foto-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-.background-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5;
 }
 
 .swiper-container {
@@ -366,8 +351,8 @@ body {
 }
 
 .panelPar img {
-    width: 20vw;
-    height: auto;
+    width: 23vw;
+    height: 18vw;
     border-radius: 2vw;
     margin-top: 5vw;
 }
@@ -405,8 +390,8 @@ body {
 }
 
 .panelImpar img {
-    width: 20vw;
-    height: auto;
+    width: 23vw;
+    height: 18vw;
     border-radius: 2vw;
     margin-top: 5vw;
 }
