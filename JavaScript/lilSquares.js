@@ -6,10 +6,10 @@ const nomesCategorias = [
 ];
 
 const imagensCategorias = [
-    ["Images/Joao.jpg", "img/estela.jpg", "img/carlos.jpg", "img/mariana.jpg", "img/lucas.jpg", "img/fernanda.jpg", "img/pedro.jpg", "img/sofia.jpg"],
-    ["Images/credenciais.jpg", "img/bruno.jpg", "img/clara.jpg", "img/daniel.jpg", "img/eduarda.jpg", "img/felipe.jpg", "img/gabriel.jpg", "img/helena.jpg"],
-    ["img/juliana.jpg", "img/kevin.jpg", "img/larissa.jpg", "img/miguel.jpg", "Images/bloco.jpg", "img/otavio.jpg", "img/priscila.jpg", "img/rodrigo.jpg"],
-    ["img/juliana.jpg", "img/kevin.jpg", "img/larissa.jpg", "img/miguel.jpg", "img/natalia.jpg", "img/otavio.jpg", "img/priscila.jpg", "img/rodrigo.jpg"]
+    ["Images/portfolio/VinilBranco.png", "Images/portfolio/VinilTransparente.png", "Images/portfolio/PlantasTerreno.png", "Images/portfolio/VinilcomRecorte.png", "Images/portfolio/Lona.png", "Images/portfolio/Banner.png", "Images/portfolio/Perfurado.png", "Images/portfolio/PlacasAdesivadas.png"],
+    ["Images/portfolio/Credenciais.png", "Images/portfolio/Convites.png", "Images/portfolio/Apostilas.png", "Images/portfolio/Calendarios.png", "Images/portfolio/Agendas.png", "Images/portfolio/Livros.png", "Images/portfolio/Rotulos.png", "Images/portfolio/Fotos.png"],
+    ["Images/portfolio/Panfleto.png", "Images/portfolio/Folder.png", "Images/portfolio/CartaoDeVisita.png", "Images/portfolio/Pastas.png", "Images/portfolio/Blocos.png", "Images/portfolio/Receituario.png", "Images/portfolio/Folheto.png", "Images/portfolio/MaterialCampanha.png"],
+    ["Images/portfolio/Camisas.png", "Images/portfolio/Canecas.png", "Images/portfolio/Pulseiras.png", "Images/portfolio/Cracha.png", "Images/portfolio/Ecobag.png", "Images/portfolio/WindBanner.png", "Images/portfolio/Caixa.png", "Images/portfolio/Display.png"]
 ];
 
 const grids = document.querySelectorAll(".square-grid");
