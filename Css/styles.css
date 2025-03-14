@@ -10,6 +10,22 @@ html {
     scroll-behavior: smooth;
 }
 
+#bg-video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 900px) {
+    #bg-video {
+        display: none;
+    }
+}
+
 @font-face {
     font-family: "Eurostile";
     src: url("fonts/14511.ttf") format("truetype");
@@ -207,7 +223,7 @@ body {
     width: 75vw;
     overflow: hidden;
     margin-left: 2.41vw;
-    margin-top: 2vw;
+    margin-top: 3vw;
 }
 
 .swiper-wrapper {
@@ -230,8 +246,8 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
     color: rgb(255, 255, 255);
-    width: 50px;
-    height: 50px;
+    width: 50vw;
+    height: 50vw;
     background-color: transparent;
     border-radius: 50%;
     position: absolute;
@@ -241,15 +257,64 @@ body {
 }
 
 .swiper-button-next {
-    right: 10px;
+    right: 10vw;
 }
 
 .swiper-button-prev {
-    left: 10px;
+    left: 10vw;
+}
+
+@media (max-width: 900px) {
+    .swiper-container {
+        position: relative;
+        width: 99vw;
+        left: 48%;
+        top: 5vw;
+        transform: translateX(-50%);
+        overflow: hidden;
+        margin-bottom: 20vw;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: rgb(255, 255, 255);
+        width: 50vw;
+        height: 50vw;
+        background-color: transparent;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+        z-index: 10;
+    }
+
+    .swiper-button-next {
+        right: 1vw;
+    }
+
+    .swiper-button-prev {
+        left: 1vw;
+    }
 }
 
 .parallax {
-    background-image: url('../Images/mule.jpg');
     height: 50vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -282,11 +347,11 @@ body {
 
 .parallax h1 {
     position: absolute;
-    top: 70%;
-    left: 15%;
+    top: 65%;
+    left: 10%;
     transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-    font-size: 4vw;
+    color: rgb(255, 255, 255);
+    font-size: 4.2vw;
     font-weight: bold;
     font-family: "Eurostile", sans-serif;
     text-shadow:
@@ -299,6 +364,38 @@ body {
     animation:
         fadeInUp 1.5s ease-out forwards,
         fadeOut 1s ease-out forwards 3s;
+}
+
+@media (max-width: 901px) {
+    .parallax {
+        position: relative;
+        background-image: none;
+        background-color: transparent;
+        height: 10vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .parallax h1 {
+        position: relative;
+        top: 65vw;
+        left: 1vw;
+        transform: translate(-50%, -50%);
+        color: rgb(255, 255, 255);
+        font-size: 18vw;
+        font-weight: bold;
+        font-family: "Eurostile", sans-serif;
+        text-shadow:
+            0 0 15px rgba(255, 255, 255, 0.8),
+            0 0 25px rgba(255, 255, 255, 0.6),
+            0 0 35px rgba(255, 255, 255, 0.4);
+        opacity: 0;
+        border-radius: 10px;
+        animation:
+            fadeInUp 1.5s ease-out forwards,
+            fadeOut 1s ease-out forwards 3s;
+    }
 }
 
 .parallax2 {
@@ -332,6 +429,64 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.sobre {
+    background-image: url('../Images/bg_sobre.png');
+    height: 20vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sobre h1 {
+    margin-left: 40vw;
+    margin-top: 10vw;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 5.2vw;
+    font-weight: bold;
+    font-family: "Eurostile", sans-serif;
+    text-shadow:
+        0 0 25px rgba(255, 255, 255, 0.8),
+        0 0 35px rgba(255, 255, 255, 0.6),
+        0 0 45px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 900px) {
+    .sobre {
+        position: relative;
+        background-image: url('../Images/bg_sobre45.png');
+        height: 45vw;
+        margin-top: 110vw;
+        width: 98vw;
+        left: 50%;
+        top: 5vw;
+        transform: translateX(-50%);
+        overflow: hidden;
+        margin-bottom: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .sobre h1 {
+        color: rgb(255, 255, 255);
+        font-size: 11vw;
+        font-weight: bold;
+        font-family: "Eurostile", sans-serif;
+        text-shadow:
+            0 0 45px rgb(0, 0, 0),
+            0 0 55px rgb(0, 0, 0),
+            0 0 65px rgb(0, 0, 0);
+        width: auto;
+        text-align: center;
+        white-space: nowrap;
+        margin-left: 6.3em;
+        margin-top: 1.3em;
+    }
 }
 
 /* Painel Par */
@@ -375,6 +530,54 @@ body {
     margin-right: 2vw;
 }
 
+@media (max-width: 900px) {
+    .panelPar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 5vw;
+        width: 80vw;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 13vw;
+        opacity: 0.13;
+        transform: translateY(40px);
+    }
+
+    .panelPar.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .panelPar img {
+        position: relative;
+        width: 58vw;
+        height: 38vw;
+        border-radius: 2vw;
+        margin-top: 5vw;
+    }
+
+    .panelPar .text {
+        margin-top: 3vw;
+    }
+
+    .panelPar .text h3 {
+        font-size: 5vw;
+        margin-top: 2.5vw;
+        font-family: "Eurostile", sans-serif;
+    }
+
+    .panelPar .text p {
+        font-size: 4vw;
+        opacity: 70%;
+        margin-top: 2vw;
+    }
+}
+
+
 /* Painel Impar */
 .panelImpar {
     display: flex;
@@ -412,6 +615,53 @@ body {
     opacity: 70%;
     margin-top: 2.5vw;
     margin-left: 2vw;
+}
+
+@media (max-width: 900px) {
+    .panelImpar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 5vw;
+        width: 80vw;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 13vw;
+        opacity: 0.13;
+        transform: translateY(40px);
+    }
+
+    .panelImpar.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .panelImpar img {
+        position: relative;
+        width: 58vw;
+        height: 38vw;
+        border-radius: 2vw;
+        margin-top: 5vw;
+    }
+
+    .panelImpar .text {
+        margin-top: 3vw;
+    }
+
+    .panelImpar .text h3 {
+        font-size: 5vw;
+        margin-top: 2.5vw;
+        font-family: "Eurostile", sans-serif;
+    }
+
+    .panelImpar .text p {
+        font-size: 4vw;
+        opacity: 70%;
+        margin-top: 2vw;
+    }
 }
 
 .containerSquares {
