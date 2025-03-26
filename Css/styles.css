@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background-color: #29232377;
     background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
     color: rgb(255, 255, 255);
     text-align: center;
@@ -267,9 +267,9 @@ body {
 @media (max-width: 900px) {
     .swiper-container {
         position: relative;
-        width: 99vw;
-        left: 48%;
-        top: 5vw;
+        width: 99.95vw;
+        left: 38vw;
+        top: 10vw;
         transform: translateX(-50%);
         overflow: hidden;
         margin-bottom: 20vw;
@@ -368,22 +368,42 @@ body {
 
 @media (max-width: 901px) {
     .parallax {
-        position: relative;
-        background-image: none;
-        background-color: transparent;
-        height: 10vw;
+        position: absolute;
+        height: 128vw;
         align-items: center;
         justify-content: center;
         text-align: center;
+        display: flex;
+        border-radius: 3vw;
+
+        background: linear-gradient(45deg,
+                #000000, #1a1a1a, #333333, #4d4d4d, #666666,
+                #4d4d4d, #333333, #1a1a1a, #000000, #000000);
+        background-size: 300% 500%;
+        animation: gradientAnimation 11s infinite linear;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        50% {
+            background-position: 100% 100%;
+        }
+
+        100% {
+            background-position: 0% 0%;
+        }
     }
 
     .parallax h1 {
         position: relative;
-        top: 65vw;
+        top: 6vw;
         left: 1vw;
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
-        font-size: 7vw;
+        font-size: 7.5vw;
         font-weight: bold;
         font-family: "Eurostile", sans-serif;
         text-shadow:
@@ -400,7 +420,7 @@ body {
 
 .parallax2 {
     background-image: url('../Images/mule2.jpg');
-    height: 20vw;
+    height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -410,7 +430,7 @@ body {
 .parallax2 h1 {
     position: absolute;
     margin-left: 40vw;
-    margin-top: 10vw;
+    margin-top: 12.5vw;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 4vw;
@@ -456,7 +476,7 @@ body {
 
 .parallax3 {
     background-image: url('../Images/dog.jpg');
-    height: 18vw;
+    height: 22vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -466,7 +486,7 @@ body {
 .parallax3 h1 {
     position: absolute;
     margin-left: 40vw;
-    margin-top: 10vw;
+    margin-top: 11vw;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 4vw;
@@ -512,7 +532,7 @@ body {
 
 .sobre {
     background-image: url('../Images/bg_sobre.png');
-    height: 20vw;
+    height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -521,7 +541,7 @@ body {
 
 .sobre h1 {
     margin-left: 40vw;
-    margin-top: 10vw;
+    margin-top: 12.5vw;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     font-size: 5.2vw;
@@ -538,7 +558,7 @@ body {
         position: relative;
         background-image: url('../Images/bg_sobre45.png');
         height: 45vw;
-        margin-top: 110vw;
+        margin-top: 120vw;
         width: 98vw;
         left: 50%;
         top: 5vw;
@@ -576,16 +596,16 @@ body {
     background-color: transparent;
     border-radius: 5vw;
     margin: 5vw auto;
-    margin-right: 5vw;
-    width: 50vw;
+    margin-right: 2vw;
+    width: 70vw;
     transform: translateX(10vw);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     flex-direction: row-reverse;
 }
 
 .panelPar img {
-    width: 27vw;
-    height: 22vw;
+    width: 42vw;
+    height: 20vw;
     border-radius: 2vw;
     margin-top: 5vw;
 }
@@ -664,15 +684,15 @@ body {
     background-color: transparent;
     border-radius: 5vw;
     margin: 5vw auto;
-    margin-left: 5vw;
-    width: 50vw;
+    margin-left: 2vw;
+    width: 70vw;
     transform: translateX(-10vw);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .panelImpar img {
-    width: 27vw;
-    height: 22vw;
+    width: 42vw;
+    height: 20vw;
     border-radius: 2vw;
     margin-top: 5vw;
 }
@@ -763,6 +783,8 @@ body {
     font-size: 2.1vw;
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1vw;
 }
 
 .column02 {
@@ -775,6 +797,8 @@ body {
     font-size: 2.1vw;
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1vw;
 }
 
 .column03 {
@@ -787,6 +811,8 @@ body {
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
     margin-top: 2vw;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1vw;
 }
 
 .column04 {
@@ -799,6 +825,8 @@ body {
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
     margin-top: 2vw;
+    border-bottom: 2px solid #000;
+    padding-bottom: 1vw;
 }
 
 .square-grid {
@@ -988,7 +1016,7 @@ button {
     position: relative;
     font-size: 1.2vw;
     padding: 0.7em 1.4em;
-    background-color: #14ff3b60;
+    background-color: #14ff3bc9;
     text-decoration: none;
     border: none;
     border-radius: 0.5em;
@@ -1005,8 +1033,8 @@ button::before {
     width: 0;
     top: 0;
     left: 0;
-    background: linear-gradient(135deg, rgba(33, 33, 33, 1) 0%, rgba(33, 33, 33, 1) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 60%);
-    border-radius: 0 0 0.5em 0;
+    background: linear-gradient(135deg, rgb(238, 235, 235) 0%, rgb(223, 217, 217) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 60%);
+    border-radius: 0.5em 0 0.5em 0;
     box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.3);
     transition: 0.3s;
 }
@@ -1066,5 +1094,62 @@ button:active {
         padding: 3vw 5vw;
         border-radius: 1.5vw;
         margin-top: 10vw;
+    }
+}
+
+@media (min-width: 901px) {
+    .trinta {
+        display: none;
+    }
+}
+
+@media (max-width: 901px) {
+    .trinta {
+        position: absolute;
+        color: #000000;
+        font-size: larger;
+        width: 80vw;
+        height: 80vw;
+        z-index: 5;
+        margin-top: 142vw;
+    }
+
+    .trinta h1 {
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 6vw;
+        font-weight: bold;
+        font-family: "Eurostile", sans-serif;
+        text-shadow:
+            0 0 15px rgba(255, 255, 255, 0.8),
+            0 0 25px rgba(255, 255, 255, 0.6),
+            0 0 35px rgba(255, 255, 255, 0.4);
+        border-radius: 10px;
+
+        animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes floatText {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes blinkText {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0.85;
+        }
     }
 }
