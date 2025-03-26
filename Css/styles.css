@@ -399,7 +399,7 @@ body {
 
     .parallax h1 {
         position: relative;
-        top: 6vw;
+        top: 7vw;
         left: 1vw;
         transform: translate(-50%, -50%);
         color: rgb(255, 255, 255);
@@ -415,6 +415,28 @@ body {
         animation:
             fadeInUp 1.5s ease-out forwards,
             fadeOut 1s ease-out forwards 3s;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 1;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeOut {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 1;
+        }
     }
 }
 
