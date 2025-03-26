@@ -34,8 +34,8 @@ html {
 }
 
 body {
-    background-color: #29232377;
-    background-image: url("https://www.transparenttextures.com/patterns/low-contrast-linen.png");
+    background-color: #00000077;
+    background-image: url('../Images/shley-tree-1-1920x1080.png');
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
@@ -269,7 +269,7 @@ body {
         position: relative;
         width: 99.95vw;
         left: 38vw;
-        top: 10vw;
+        top: -30vw;
         transform: translateX(-50%);
         overflow: hidden;
         margin-bottom: 20vw;
@@ -347,8 +347,9 @@ body {
 
 .parallax h1 {
     position: absolute;
-    top: 65%;
-    left: 10%;
+    top: 37vw;
+    left: 40vw;
+    white-space: nowrap;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
     font-size: 4.2vw;
@@ -358,84 +359,50 @@ body {
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
         0 0 35px rgba(255, 255, 255, 0.4);
-    opacity: 0;
-    padding: 10px 20px;
-    border-radius: 10px;
-    animation:
-        fadeInUp 1.5s ease-out forwards,
-        fadeOut 1s ease-out forwards 3s;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
 }
 
 @media (max-width: 901px) {
-    .parallax {
-        position: absolute;
-        height: 128vw;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        display: flex;
-        border-radius: 3vw;
-
-        background: linear-gradient(45deg,
-                #000000, #1a1a1a, #333333, #4d4d4d, #666666,
-                #4d4d4d, #333333, #1a1a1a, #000000, #000000);
-        background-size: 300% 500%;
-        animation: gradientAnimation 11s infinite linear;
-    }
-
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 0%;
-        }
-
-        50% {
-            background-position: 100% 100%;
-        }
-
-        100% {
-            background-position: 0% 0%;
-        }
-    }
 
     .parallax h1 {
-        position: relative;
-        top: 7vw;
-        left: 1vw;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 80vw;
+        left: 40vw;
         color: rgb(255, 255, 255);
-        font-size: 7.5vw;
+        font-size: 5vw;
         font-weight: bold;
         font-family: "Eurostile", sans-serif;
         text-shadow:
             0 0 15px rgba(255, 255, 255, 0.8),
             0 0 25px rgba(255, 255, 255, 0.6),
             0 0 35px rgba(255, 255, 255, 0.4);
-        opacity: 0;
-        border-radius: 10px;
-        animation:
-            fadeInUp 1.5s ease-out forwards,
-            fadeOut 1s ease-out forwards 3s;
+        animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
+        left: 5vw;
+
     }
 
-    @keyframes fadeInUp {
+    @keyframes floatText {
         0% {
-            opacity: 1;
-            transform: translateY(20px);
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-10px);
         }
 
         100% {
-            opacity: 1;
             transform: translateY(0);
         }
     }
 
-    @keyframes fadeOut {
+    @keyframes blinkText {
         0% {
             opacity: 1;
         }
 
         100% {
-            opacity: 1;
+            opacity: 0.85;
         }
     }
 }
@@ -579,8 +546,8 @@ body {
     .sobre {
         position: relative;
         background-image: url('../Images/bg_sobre45.png');
-        height: 45vw;
-        margin-top: 120vw;
+        height: 55vw;
+        margin-top: 90vw;
         width: 98vw;
         left: 50%;
         top: 5vw;
@@ -805,7 +772,7 @@ body {
     font-size: 2.1vw;
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
 }
 
@@ -819,7 +786,7 @@ body {
     font-size: 2.1vw;
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
 }
 
@@ -833,7 +800,7 @@ body {
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
     margin-top: 2vw;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
 }
 
@@ -847,7 +814,7 @@ body {
     font-family: "Eurostile", sans-serif;
     margin-bottom: 2vw;
     margin-top: 2vw;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
 }
 
@@ -1130,10 +1097,11 @@ button:active {
         position: absolute;
         color: #000000;
         font-size: larger;
-        width: 80vw;
-        height: 80vw;
+        width: 85vw;
+        height: 85vw;
         z-index: 5;
-        margin-top: 142vw;
+        margin-top: 110vw;
+        left: -2.9vw;
     }
 
     .trinta h1 {
@@ -1166,6 +1134,50 @@ button:active {
     }
 
     @keyframes blinkText {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0.85;
+        }
+    }
+}
+
+@media (max-width: 901px) {
+
+    .arrow-container {
+        position: absolute;
+        left: 50%;
+        top: 150vw;
+        bottom: 20px;
+        transform: translateX(-50%);
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid white;
+        animation: floatTextArrow 3s infinite ease-in-out, blinkTextArrow 1.5s infinite alternate ease-in-out;
+    }
+
+    @keyframes floatTextArrow {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes blinkTextArrow {
         0% {
             opacity: 1;
         }
