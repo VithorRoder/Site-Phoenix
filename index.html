@@ -19,6 +19,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre-nos">Sobre Nós</a></li>
             <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#endereco">Nossa Localização</a></li>
             <li><a href="#orcamento">Faça um Orçamento</a></li>
         </ul>
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
@@ -129,6 +130,29 @@
         </div>
     </div>
 
+    <div id="endereco" class="parallax4">
+        <h1 class="nosso-endereco">Nossa Localização</h1>
+    </div>
+
+    <div class="location">
+        <h1>Venha nos Conhecer!</h1>
+        <p>
+            Estamos localizados no coração de Curicica, no Rio de Janeiro, na <strong>Estrada dos Bandeirantes, nº 4885</strong>.<br>
+            Nossa gráfica está em um ponto de fácil acesso, pronta para atender você com <em>qualidade e rapidez</em>.<br>
+            Venha nos visitar e conferir nossos serviços de perto!
+        </p>
+    </div>
+
+    <div class="loader"></div>
+
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1092.2111117485454!2d-43.38771084167264!3d-22.95959315915664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdcdf2e246ecb%3A0x51a2ed5d92a4852f!2sGr%C3%A1fica%20e%20Papelaria%20Phoenix!5e0!3m2!1spt-BR!2sbr!4v1743189978909!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
     <div id="orcamento" class="parallax3">
         <h1 class="orcamento-title">Solicite seu Orçamento</h1>
     </div>
@@ -156,10 +180,6 @@
 
     <script>
         window.history.scrollRestoration = "manual";
-    </script>
-
-    <script>
-        AOS.init();
     </script>
 
     <!-- Vinculando o arquivo JS -->

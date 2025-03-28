@@ -34,7 +34,7 @@ html {
 }
 
 body {
-    background-color: #00000077;
+    background-color: #111010;
     background-image: url('../Images/shley-tree-1-1920x1080.png');
     color: rgb(255, 255, 255);
     text-align: center;
@@ -82,7 +82,7 @@ body {
 
 .menu-toggle {
     display: none;
-    font-size: 32px;
+    font-size: 8vw;
     color: white;
     cursor: pointer;
     position: absolute;
@@ -104,6 +104,7 @@ body {
 
     .nav-menu.active {
         display: flex;
+        background-color: #00000085;
     }
 
     .nav-menu li {
@@ -122,7 +123,7 @@ body {
 
 @media (max-width: 1200px) {
     .header.scrolled {
-        background: transparent;
+        background-color: transparent;
     }
 }
 
@@ -519,6 +520,63 @@ body {
     }
 }
 
+.parallax4 {
+    background-image: url('../Images/NossaLocalizacao.png');
+    height: 22vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 4vw;
+}
+
+.parallax4 h1 {
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 11.5vw;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: "Eurostile", sans-serif;
+    text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.8),
+        0 0 25px rgba(255, 255, 255, 0.6),
+        0 0 35px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 900px) {
+    .parallax4 {
+        position: relative;
+        height: 45vw;
+        width: 98vw;
+        left: 50%;
+        top: 5vw;
+        transform: translateX(-50%);
+        overflow: hidden;
+        margin-bottom: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .parallax4 h1 {
+        color: rgb(255, 255, 255);
+        font-size: 11vw;
+        font-weight: bold;
+        font-family: "Eurostile", sans-serif;
+        text-shadow:
+            0 0 55px rgb(0, 0, 0),
+            0 0 65px rgb(0, 0, 0),
+            0 0 75px rgb(0, 0, 0);
+        width: auto;
+        text-align: center;
+        margin-left: 5.2em;
+        margin-top: 4em;
+    }
+}
+
 .sobre {
     background-image: url('../Images/bg_sobre.png');
     height: 25vw;
@@ -869,7 +927,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, auto);
         justify-content: center;
-        margin-left: 1.4em;
+        margin-left: 1.95em;
         margin-top: 3em;
         margin-bottom: 3em;
     }
@@ -1186,4 +1244,94 @@ button:active {
             opacity: 0.85;
         }
     }
+}
+
+.loader {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 327vw;
+    left: 13.2vw;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50% 50% 0 50%;
+    background: #0000;
+    background-image: radial-gradient(circle 1vw at 50% 50%, #0000 94%, #ff4747);
+    height: 4vw;
+    width: 4vw;
+}
+
+.loader:after {
+    animation: pulse-ytk0dhmd 1s infinite;
+    transform: perspective(336px) translateZ(0px);
+}
+
+@keyframes pulse-ytk0dhmd {
+    to {
+        transform: perspective(336px) translateZ(168px);
+        opacity: 0;
+    }
+}
+
+.map-container {
+    width: 30vw;
+    height: 25vw;
+    border: 4px solid #4a90e2;
+    border-radius: 2vw;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin-top: -29.7vw;
+    margin-bottom: 5vw;
+    margin-left: 45vw;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.location {
+    width: 40vw;
+    height: 27vw;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #f7fbff;
+    border: 4px solid #4a90e2;
+    border-radius: 2vw;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin-left: 1vw;
+}
+
+.location h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4a90e2;
+    border-bottom: 2px solid #e3f0ff;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.location p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.location strong {
+    color: #4a90e2;
+}
+
+.location em {
+    font-style: normal;
+    color: #f15a24;
+    font-weight: 500;
 }
