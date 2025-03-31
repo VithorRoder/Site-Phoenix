@@ -1251,8 +1251,8 @@ button:active {
     height: 15vw;
     position: absolute;
     transform: rotate(45deg);
-    top: 327vw;
-    left: 13.2vw;
+    top: 330vw;
+    left: 13.5vw;
 }
 
 .loader:before,
@@ -1280,15 +1280,15 @@ button:active {
 }
 
 .map-container {
-    width: 30vw;
-    height: 25vw;
-    border: 4px solid #4a90e2;
+    width: 32vw;
+    height: 23vw;
+    border: 0.3vw solid #4a90e2;
     border-radius: 2vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin-top: -29.7vw;
-    margin-bottom: 5vw;
-    margin-left: 45vw;
+    margin-top: -30.65vw;
+    margin-bottom: 10vw;
+    margin-left: 46vw;
 }
 
 .map-container iframe {
@@ -1300,30 +1300,32 @@ button:active {
 .location {
     width: 40vw;
     height: 27vw;
-    margin: 80px auto;
-    padding: 30px;
+    margin: 5.9vw;
     background-color: #f7fbff;
-    border: 4px solid #4a90e2;
+    border: 0.3vw solid #4a90e2;
     border-radius: 2vw;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    margin-left: 1vw;
+    margin-left: 1.7vw;
 }
 
 .location h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2.7vw;
+    margin-bottom: 2.5vw;
     color: #4a90e2;
     border-bottom: 2px solid #e3f0ff;
     display: inline-block;
-    padding-bottom: 8px;
+    margin-top: 1.8vw;
+    margin-left: 1.3vw;
 }
 
 .location p {
-    font-size: 22px;
+    font-size: 1.1vw;
     line-height: 1.6;
+    width: 35vw;
+    margin-left: 2vw;
 }
 
 .location strong {
