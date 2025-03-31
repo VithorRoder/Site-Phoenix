@@ -28,7 +28,14 @@ html {
 
 @font-face {
     font-family: "Eurostile";
-    src: url("fonts/14511.ttf") format("truetype");
+    src: url('../fonts/14511.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url('../fonts/Merriweather.ttf') format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -36,6 +43,7 @@ html {
 body {
     background-color: #111010;
     background-image: url('../Images/shley-tree-1-1920x1080.png');
+    background-size: contain;
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
@@ -128,44 +136,27 @@ body {
 }
 
 .footer {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 99.4vw;
     background-color: #0f0206;
-    background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
+    background-image: url('../Images/rootTree.png');
+    background-size: contain;
     color: white;
-    padding: 40px;
+    padding: 2.5vw;
     text-align: center;
-    font-size: 14px;
-}
-
-.footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-.footer-links li {
-    display: inline;
-}
-
-.footer-links li a {
-    margin: 0 15px;
+    font-size: 1vw;
 }
 
 .fixed-logo {
-    width: 6.8vw;
-    height: 6.8vw;
+    width: 7.05vw;
+    height: 7.05vw;
     position: fixed;
-    bottom: 2.65vw;
-    right: 2.65vw;
+    bottom: 2.5vw;
+    right: 2.5vw;
     z-index: 100;
     cursor: pointer;
 }
@@ -355,13 +346,14 @@ body {
     color: rgb(255, 255, 255);
     font-size: 4.2vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
     text-shadow:
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
         0 0 35px rgba(255, 255, 255, 0.4);
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
+    letter-spacing: 0.1vw;
 }
 
 @media (max-width: 901px) {
@@ -369,17 +361,17 @@ body {
     .parallax h1 {
         position: absolute;
         top: 80vw;
-        left: 40vw;
+        left: -2.2vw;
         color: rgb(255, 255, 255);
-        font-size: 5vw;
+        font-size: 5.5vw;
         font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
         text-shadow:
             0 0 15px rgba(255, 255, 255, 0.8),
             0 0 25px rgba(255, 255, 255, 0.6),
             0 0 35px rgba(255, 255, 255, 0.4);
         animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
-        left: 5vw;
 
     }
 
@@ -425,7 +417,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     text-shadow:
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
@@ -481,7 +474,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     text-shadow:
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
@@ -508,7 +502,8 @@ body {
         color: rgb(255, 255, 255);
         font-size: 11vw;
         font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
         text-shadow:
             0 0 55px rgb(0, 0, 0),
             0 0 65px rgb(0, 0, 0),
@@ -538,7 +533,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     text-shadow:
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
@@ -565,7 +561,8 @@ body {
         color: rgb(255, 255, 255);
         font-size: 11vw;
         font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
         text-shadow:
             0 0 55px rgb(0, 0, 0),
             0 0 65px rgb(0, 0, 0),
@@ -593,7 +590,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 5.2vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     text-shadow:
         0 0 25px rgba(255, 255, 255, 0.8),
         0 0 35px rgba(255, 255, 255, 0.6),
@@ -622,7 +620,8 @@ body {
         color: rgb(255, 255, 255);
         font-size: 11.5vw;
         font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
         text-shadow:
             0 0 45px rgb(0, 0, 0),
             0 0 55px rgb(0, 0, 0),
@@ -663,17 +662,20 @@ body {
 }
 
 .panelPar .text h3 {
-    font-size: 2.2vw;
-    margin-top: 2.5vw;
+    font-size: 2.3vw;
+    margin-top: 4.1vw;
     margin-right: 2vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
 }
 
 .panelPar .text p {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     opacity: 70%;
     margin-top: 2.5vw;
     margin-right: 2vw;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
 }
 
 @media (max-width: 900px) {
@@ -713,13 +715,16 @@ body {
     .panelPar .text h3 {
         font-size: 5vw;
         margin-top: 2.5vw;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
     }
 
     .panelPar .text p {
         font-size: 4vw;
         opacity: 70%;
         margin-top: 2vw;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
     }
 }
 
@@ -732,7 +737,7 @@ body {
     border-radius: 5vw;
     margin: 5vw auto;
     margin-left: 2vw;
-    width: 70vw;
+    width: 65vw;
     transform: translateX(-10vw);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
@@ -750,17 +755,20 @@ body {
 }
 
 .panelImpar .text h3 {
-    font-size: 2.2vw;
+    font-size: 2.3vw;
     margin-top: 2.5vw;
     margin-left: 2vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
 }
 
 .panelImpar .text p {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     opacity: 70%;
     margin-top: 2.5vw;
     margin-left: 2vw;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
 }
 
 @media (max-width: 900px) {
@@ -800,7 +808,8 @@ body {
     .panelImpar .text h3 {
         font-size: 5vw;
         margin-top: 2.5vw;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
     }
 
     .panelImpar .text p {
@@ -808,6 +817,66 @@ body {
         opacity: 70%;
         margin-top: 2vw;
     }
+}
+
+.back01 {
+    padding: 2vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-top: -113vw;
+    margin-left: 10vw;
+    width: 58vw;
+    height: 15vw;
+    z-index: -1;
+}
+
+.back02 {
+    padding: 2vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-top: -82.8vw;
+    margin-left: 7vw;
+    width: 50vw;
+    height: 15vw;
+    z-index: -1;
+}
+
+.back03 {
+    padding: 2vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-top: -53.5vw;
+    margin-left: 8.3vw;
+    width: 60vw;
+    height: 15vw;
+    z-index: -1;
+}
+
+.back04 {
+    padding: 2vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    margin-top: -22.3vw;
+    margin-left: 7vw;
+    width: 50vw;
+    height: 15vw;
+    z-index: -1;
 }
 
 .containerSquares {
@@ -828,7 +897,8 @@ body {
 
 .column01 h2 {
     font-size: 2.1vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     margin-bottom: 2vw;
     border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
@@ -842,7 +912,8 @@ body {
 
 .column02 h2 {
     font-size: 2.1vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     margin-bottom: 2vw;
     border-bottom: 2px solid #ffffff;
     padding-bottom: 1vw;
@@ -855,7 +926,8 @@ body {
 
 .column03 h2 {
     font-size: 2.1vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
     border-bottom: 2px solid #ffffff;
@@ -869,7 +941,8 @@ body {
 
 .column04 h2 {
     font-size: 2.1vw;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
     border-bottom: 2px solid #ffffff;
@@ -1015,7 +1088,8 @@ body {
     color: rgb(0, 0, 0);
     font-size: 4.4vw;
     font-weight: bold;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     text-shadow:
         0 0 15px rgba(255, 255, 255, 0.8),
         0 0 25px rgba(255, 255, 255, 0.6),
@@ -1165,15 +1239,16 @@ button:active {
     .trinta h1 {
         position: absolute;
         color: rgb(255, 255, 255);
-        font-size: 6vw;
+        font-size: 5vw;
+        left: 1.1vw;
         font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", serif;
+        letter-spacing: 0.11vw;
         text-shadow:
             0 0 15px rgba(255, 255, 255, 0.8),
             0 0 25px rgba(255, 255, 255, 0.6),
             0 0 35px rgba(255, 255, 255, 0.4);
         border-radius: 10px;
-
         animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
     }
 
@@ -1252,7 +1327,7 @@ button:active {
     position: absolute;
     transform: rotate(45deg);
     top: 330vw;
-    left: 13.5vw;
+    left: 14.3vw;
 }
 
 .loader:before,
@@ -1318,14 +1393,14 @@ button:active {
     border-bottom: 2px solid #e3f0ff;
     display: inline-block;
     margin-top: 1.8vw;
-    margin-left: 1.3vw;
+    margin-left: 1.19vw;
 }
 
 .location p {
     font-size: 1.1vw;
     line-height: 1.6;
     width: 35vw;
-    margin-left: 2vw;
+    margin-left: 2.2vw;
 }
 
 .location strong {
@@ -1336,4 +1411,84 @@ button:active {
     font-style: normal;
     color: #f15a24;
     font-weight: 500;
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(238, 238, 238, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vw;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    flex-direction: row;
+    margin-left: 39.67vw;
+    margin-top: 1.7vw;
+}
+
+/* for all social containers*/
+.socialContainer {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+}
+
+.socialSvg {
+    width: 1.1vw;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
