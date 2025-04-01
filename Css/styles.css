@@ -1074,10 +1074,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    width: 50vw;
     padding: 2vw;
-    margin-top: 1.5vw;
+    margin-top: 2.5vw;
+    margin-bottom: 2vw;
     justify-content: center;
+    margin-left: 14.5vw;
 }
 
 .orcamento-title {
@@ -1105,6 +1107,7 @@ body {
 }
 
 .orcamento-form input,
+.orcamento-form select,
 .orcamento-form textarea {
     width: 100%;
     border: none;
@@ -1127,6 +1130,7 @@ body {
 }
 
 .orcamento-form input:focus,
+.orcamento-form select:focus,
 .orcamento-form textarea:focus {
     background-color: white;
     transform: scale(1.03);
@@ -1326,7 +1330,7 @@ button:active {
     height: 15vw;
     position: absolute;
     transform: rotate(45deg);
-    top: 330vw;
+    top: 335.5vw;
     left: 14.3vw;
 }
 
@@ -1337,9 +1341,9 @@ button:active {
     inset: 0;
     border-radius: 50% 50% 0 50%;
     background: #0000;
-    background-image: radial-gradient(circle 1vw at 50% 50%, #0000 94%, #ff4747);
-    height: 4vw;
-    width: 4vw;
+    background-image: radial-gradient(circle 0.8vw at 50% 50%, #0000 94%, #ff4747);
+    height: 3vw;
+    width: 3vw;
 }
 
 .loader:after {
@@ -1372,9 +1376,18 @@ button:active {
     display: block;
 }
 
+.map-container img {
+    position: absolute;
+    width: 8vw;
+    height: 8vw;
+    left: 58.5vw;
+    top: 307vw;
+
+}
+
 .location {
     width: 40vw;
-    height: 27vw;
+    height: 30vw;
     margin: 5.9vw;
     background-color: #f7fbff;
     border: 0.3vw solid #4a90e2;
@@ -1413,6 +1426,13 @@ button:active {
     font-weight: 500;
 }
 
+.horario {
+    margin-top: 0.9vw;
+    padding-top: 0.7vw;
+    border-top: 0.05vw solid #e3f0ff;
+    font-size: 0.7vw;
+}
+
 .card {
     width: fit-content;
     height: fit-content;
@@ -1423,14 +1443,15 @@ button:active {
     gap: 1.3vw;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
     flex-direction: row;
-    margin-left: 39.67vw;
-    margin-top: 1.7vw;
+    position: absolute;
+    bottom: 8.5vw;
+    left: 29.72vw;
 }
 
 /* for all social containers*/
 .socialContainer {
-    width: 3vw;
-    height: 3vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     display: flex;
@@ -1470,7 +1491,7 @@ button:active {
 }
 
 .socialSvg {
-    width: 1.1vw;
+    width: 1.5vw;
 }
 
 .socialSvg path {
@@ -1491,4 +1512,19 @@ button:active {
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+.back05 {
+    padding: 2vw;
+    border-radius: 2vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.26);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    position: absolute;
+    width: 40vw;
+    height: 48vw;
+    z-index: -1;
+    left: 19.5vw;
+    top: 364vw;
 }
