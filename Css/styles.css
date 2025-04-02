@@ -819,66 +819,6 @@ body {
     }
 }
 
-.back01 {
-    padding: 2vw;
-    border-radius: 2vw;
-    backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-top: -113vw;
-    margin-left: 10vw;
-    width: 58vw;
-    height: 15vw;
-    z-index: -1;
-}
-
-.back02 {
-    padding: 2vw;
-    border-radius: 2vw;
-    backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-top: -82.8vw;
-    margin-left: 7vw;
-    width: 50vw;
-    height: 15vw;
-    z-index: -1;
-}
-
-.back03 {
-    padding: 2vw;
-    border-radius: 2vw;
-    backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-top: -53.5vw;
-    margin-left: 8.3vw;
-    width: 60vw;
-    height: 15vw;
-    z-index: -1;
-}
-
-.back04 {
-    padding: 2vw;
-    border-radius: 2vw;
-    backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    position: absolute;
-    margin-top: -22.3vw;
-    margin-left: 7vw;
-    width: 50vw;
-    height: 15vw;
-    z-index: -1;
-}
-
 .containerSquares {
     display: grid;
     grid-template-columns: 1fr;
@@ -887,6 +827,7 @@ body {
 
 .column {
     margin-bottom: 6vw;
+    width: 80vw;
 }
 
 .column h2 {
@@ -1588,15 +1529,15 @@ button:active {
     }
 }
 
-.back05 {
+.back01 {
     backdrop-filter: blur(4px);
     background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     position: absolute;
     width: 80vw;
-    height: 45vw;
+    height: 740vw;
     z-index: -1;
     left: 0vw;
-    top: 742vw;
+    top: 50vw;
 }
