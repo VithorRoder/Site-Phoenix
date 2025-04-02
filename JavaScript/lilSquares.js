@@ -33,14 +33,14 @@ grids.forEach((grid, categoriaIndex) => {
         const square = document.createElement("div");
         square.className = "square";
 
-        const span = document.createElement("span");
-        span.textContent = nomes[i];
+        //const span = document.createElement("span");
+        //span.textContent = nomes[i];
 
         const img = document.createElement("img");
         img.src = imagens[i];
         img.alt = nomes[i];
 
-        square.appendChild(span);
+        //square.appendChild(span);
         square.appendChild(img);
 
         const textDiv = document.createElement("div");
@@ -52,8 +52,14 @@ grids.forEach((grid, categoriaIndex) => {
         const p = document.createElement("p");
         p.textContent = descricoes[i];
 
+        // 🟢 Botão
+        const button = document.createElement("button");
+        button.textContent = "Saiba mais";
+
+        // Montagem
         textDiv.appendChild(h3);
         textDiv.appendChild(p);
+        textDiv.appendChild(button);
 
         itemWrapper.appendChild(square);
         itemWrapper.appendChild(textDiv);
