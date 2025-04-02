@@ -1074,12 +1074,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 50vw;
+    width: 30vw;
     padding: 2vw;
-    margin-top: 2.5vw;
-    margin-bottom: 2vw;
     justify-content: center;
-    margin-left: 14.5vw;
+    margin-left: 44vw;
+    backdrop-filter: blur(4px);
+    background-color: rgba(255, 255, 255, 0.822);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
 }
 
 .orcamento-title {
@@ -1101,9 +1103,10 @@ body {
 .orcamento-form {
     display: flex;
     flex-direction: column;
-    gap: 0.9vw;
-    width: 20vw;
-    margin-bottom: 5vw;
+    gap: 0.5vw;
+    width: 18vw;
+    margin-bottom: 3.5vw;
+    margin-top: 1vw;
 }
 
 .orcamento-form input,
@@ -1137,15 +1140,38 @@ body {
     box-shadow: 5px 5px 15px #969696, -5px -5px 15px #ffffff;
 }
 
+.orcamento-form h2 {
+    font-size: 2vw;
+    white-space: nowrap;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    letter-spacing: 0.11vw;
+    margin-left: -2.8vw;
+    padding-bottom: 2vw;
+    color: #0072b1;
+    position: relative;
+    display: inline-block;
+}
+
+.orcamento-form h2::after {
+    content: "";
+    position: absolute;
+    left: 0.2vw;
+    bottom: 0.9vw;
+    width: 110%;
+    height: 1px;
+    background-color: #0072b1;
+}
+
 button {
     position: relative;
     font-size: 1.2vw;
     padding: 0.7em 1.4em;
-    background-color: #14ff3bc9;
+    background-color: #10da31c9;
     text-decoration: none;
     border: none;
     border-radius: 0.5em;
-    color: #DEDEDE;
+    color: #ffffff;
     box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
     cursor: pointer;
     margin-top: 2vw;
@@ -1440,18 +1466,17 @@ button:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.3vw;
+    flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-    flex-direction: row;
     position: absolute;
-    bottom: 8.5vw;
-    left: 29.72vw;
+    bottom: 9vw;
+    left: 3.5vw;
 }
 
 /* for all social containers*/
 .socialContainer {
-    width: 4vw;
-    height: 4vw;
+    width: 4.5vw;
+    height: 4.5vw;
     border-radius: 50%;
     background-color: rgb(44, 44, 44);
     display: flex;
@@ -1459,6 +1484,62 @@ button:active {
     justify-content: center;
     overflow: hidden;
     transition-duration: 0.3s;
+    position: absolute;
+    left: 0.7vw;
+}
+
+.containerOne {
+    top: 3vw;
+}
+
+.containerTwo {
+    top: 11.98vw;
+}
+
+.containerThree {
+    top: 20.3vw;
+}
+
+.containerFour {
+    top: 28.6vw;
+}
+
+.contactTextI,
+.contactTextE,
+.contactTextL,
+.contactTextW {
+    color: white;
+    font-family: "Merriweather", serif;
+    width: 30vw;
+    font-size: 0.9vw;
+    padding: 1.03vw;
+    margin-left: 6vw;
+    margin-top: 1.3vw;
+}
+
+.contactTextI h2,
+.contactTextE h2,
+.contactTextL h2,
+.contactTextW h2 {
+    font-size: 1.7vw;
+    margin-bottom: 0.85vw;
+    font-family: "Merriweather", serif;
+}
+
+.contactTextI h2 {
+    color: #d62976;
+}
+
+.contactTextE h2 {
+    color: #00bcdd;
+}
+
+.contactTextL h2 {
+    color: #1c7bd3;
+}
+
+.contactTextW h2 {
+    color: #27c421c7;
 }
 
 /* instagram*/
@@ -1469,19 +1550,19 @@ button:active {
 
 /* twitter*/
 .containerTwo:hover {
-    background-color: #00acee;
+    background-color: #00bcdd;
     transition-duration: 0.3s;
 }
 
 /* linkdin*/
 .containerThree:hover {
-    background-color: #0072b1;
+    background-color: #0159ac;
     transition-duration: 0.3s;
 }
 
 /* Whatsapp*/
 .containerFour:hover {
-    background-color: #128c7e;
+    background-color: #27c421c7;
     transition-duration: 0.3s;
 }
 
@@ -1491,7 +1572,7 @@ button:active {
 }
 
 .socialSvg {
-    width: 1.5vw;
+    width: 1.8vw;
 }
 
 .socialSvg path {
@@ -1515,16 +1596,14 @@ button:active {
 }
 
 .back05 {
-    padding: 2vw;
-    border-radius: 2vw;
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 102, 0, 0.404);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     position: absolute;
-    width: 40vw;
-    height: 48vw;
+    width: 80vw;
+    height: 45vw;
     z-index: -1;
-    left: 19.5vw;
-    top: 364vw;
+    left: 0vw;
+    top: 365vw;
 }
