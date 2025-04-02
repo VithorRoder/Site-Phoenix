@@ -881,109 +881,67 @@ body {
 
 .containerSquares {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 1fr;
     justify-content: center;
-    margin-left: 10.5vw;
-    margin-top: 3vw;
+}
+
+.column {
+    margin-bottom: 6vw;
+}
+
+.column h2 {
+    font-size: 2.5vw;
+    font-family: "Merriweather", serif;
+    letter-spacing: 0.11vw;
     margin-bottom: 3vw;
-}
-
-.column01 {
-    text-align: center;
-    width: 70%;
-    margin-bottom: 2vw;
-}
-
-.column01 h2 {
-    font-size: 2.1vw;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.11vw;
-    margin-bottom: 2vw;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 5px solid #ffffff;
     padding-bottom: 1vw;
-}
-
-.column02 {
-    text-align: center;
-    width: 70%;
-    margin-bottom: 2vw;
-}
-
-.column02 h2 {
-    font-size: 2.1vw;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.11vw;
-    margin-bottom: 2vw;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 1vw;
-}
-
-.column03 {
-    text-align: center;
-    width: 70%;
-}
-
-.column03 h2 {
-    font-size: 2.1vw;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.11vw;
-    margin-bottom: 2vw;
     margin-top: 2vw;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 1vw;
-}
-
-.column04 {
-    text-align: center;
-    width: 70%;
-}
-
-.column04 h2 {
-    font-size: 2.1vw;
-    font-family: "Merriweather", serif;
-    letter-spacing: 0.11vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 1vw;
+    text-align: left;
+    padding-left: 2vw;
 }
 
 .square-grid {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    gap: 1vw;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4vw 3vw;
+    padding: 0 2vw;
+}
+
+.itemSquare {
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
 }
 
 .square {
-    position: relative;
-    overflow: hidden;
-    width: 7vw;
-    height: 7vw;
-    background-color: #ff5733;
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    border-radius: 0.5vw;
+    width: 10vw;
+    height: 10vw;
+    background-color: #291e1b;
+    border-radius: 0.8vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.1vw;
+    font-size: 1vw;
     color: white;
     font-weight: bold;
+    position: relative;
+    overflow: hidden;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .square img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
 .square:hover {
-    transform: translateY(-10px) rotate(7deg) scale(1.3);
+    transform: translateY(-10px) rotate(7deg) scale(1.2);
     background-color: #2bc8ce81;
 }
 
@@ -993,6 +951,20 @@ body {
 
 .square:hover span {
     opacity: 0;
+}
+
+.textSquares {
+    max-width: 14vw;
+}
+
+.textSquares h3 {
+    font-size: 1.2vw;
+    margin: 0 0 0.5vw 0;
+}
+
+.textSquares p {
+    font-size: 1vw;
+    line-height: 1.4;
 }
 
 @media (max-width: 900px) {
@@ -1356,7 +1328,7 @@ button:active {
     height: 15vw;
     position: absolute;
     transform: rotate(45deg);
-    top: 335.5vw;
+    top: 553.4vw;
     left: 14.3vw;
 }
 
@@ -1407,7 +1379,7 @@ button:active {
     width: 8vw;
     height: 8vw;
     left: 58.5vw;
-    top: 307vw;
+    top: 525.5vw;
 
 }
 
@@ -1478,7 +1450,7 @@ button:active {
     width: 4.5vw;
     height: 4.5vw;
     border-radius: 50%;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(32, 30, 30);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1597,7 +1569,7 @@ button:active {
 
 .back05 {
     backdrop-filter: blur(4px);
-    background-color: rgba(255, 102, 0, 0.404);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     position: absolute;
@@ -1605,5 +1577,5 @@ button:active {
     height: 45vw;
     z-index: -1;
     left: 0vw;
-    top: 365vw;
+    top: 580vw;
 }
