@@ -1,7 +1,7 @@
 const nomesCategorias = [
     ["Vinil Branco", "Vinil Transparente", "Plantas de Terreno", "Vinil com Recorte", "Lona", "Banner", "Perfurado", "Placas Adesivadas"],
     ["Credenciais", "Convites", "Apostilas", "Calendários", "Agendas", "Livros", "Rótulos", "Fotos"],
-    ["Panfletos", "Folders", "Cartão de Visita", "Pastas", "Blocos", "Receituários", "Folhetos", "Material de Campanha"],
+    ["Panfletos", "Folders", "Cartão de Visita", "Pastas", "Blocos", "Receituários", "Folhetos", "Material Eleitoral"],
     ["Camisas", "Canecas", "Pulseiras", "Crachá em PVC", "Ecobag", "Wind Banner", "Caixas", "Display em Acrílico"]
 ];
 
@@ -13,10 +13,46 @@ const imagensCategorias = [
 ];
 
 const descricoesCategorias = [
-    ["Adesivo para superfícies planas", "Adesivo transparente resistente", "Plantas para obras", "Recorte eletrônico personalizado", "Ideal para fachadas", "Comunicação promocional", "Para vidro de carro ou loja", "Placas em PS com adesivo aplicado"],
-    ["Identificação para eventos", "Convites para casamentos e festas", "Material didático impresso", "Calendários personalizados", "Agendas corporativas", "Livros sob demanda", "Rótulos para produtos", "Fotos com qualidade fotográfica"],
-    ["Material promocional", "Dobraduras e informativos", "Cartões de visita profissionais", "Pastas para apresentações", "Blocos para anotações", "Receituários médicos", "Folhetos em geral", "Kit completo de campanha"],
-    ["Estampas personalizadas", "Canecas com logo", "Pulseiras para eventos", "Crachás de PVC com clip", "Ecobags ecológicas", "Bandeiras para vento", "Caixas personalizadas", "Display transparente em acrílico"]
+    [
+        "Adesivo para superfícies planas, ideal para paredes e ambientes internos",
+        "Adesivo transparente resistente, perfeito para vitrines e áreas externas",
+        "Plantas técnicas detalhadas para projetos e obras",
+        "Recorte eletrônico personalizado com alta precisão e acabamento perfeito",
+        "Ideal para fachadas e comunicação visual externa, resistente ao tempo",
+        "Comunicação promocional personalizada para campanhas publicitárias",
+        "Adesivos ideais para vidro de carro, vitrines e janelas de lojas",
+        "Placas em PS com adesivo aplicado, ideais para sinalização interna e externa"
+    ],
+    [
+        "Identificação personalizada para eventos, congressos e feiras",
+        "Convites especiais para casamentos, festas e celebrações únicas",
+        "Material didático impresso com qualidade e acabamento profissional",
+        "Calendários personalizados com sua marca para brindes e presentes",
+        "Agendas corporativas com personalização exclusiva para sua empresa",
+        "Livros impressos sob demanda com acabamento profissional e alta qualidade",
+        "Rótulos personalizados para produtos com qualidade profissional",
+        "Fotos impressas com resolução fotográfica e qualidade excepcional"
+    ],
+    [
+        "Material promocional impresso para divulgação eficaz da sua marca",
+        "Dobraduras e informativos impressos com design profissional e atraente",
+        "Cartões de visita profissionais que reforçam a identidade visual da sua marca",
+        "Pastas personalizadas ideais para apresentações corporativas e reuniões",
+        "Blocos de anotações personalizados, ótimos para brindes e uso diário",
+        "Receituários médicos personalizados com impressão clara e precisa",
+        "Folhetos promocionais em geral com alta qualidade gráfica",
+        "Kit completo de campanha, com materiais gráficos integrados para melhor desempenho"
+    ],
+    [
+        "Estampas personalizadas em camisetas e tecidos diversos para eventos e promoções",
+        "Canecas personalizadas com logo ou arte, ideais para presentes e brindes",
+        "Pulseiras personalizadas para controle e identificação em eventos",
+        "Crachás de PVC com clip resistentes e duráveis, ideais para identificação profissional",
+        "Ecobags ecológicas personalizadas, sustentáveis e práticas para uso diário",
+        "Bandeiras promocionais resistentes ao vento, ideais para eventos ao ar livre",
+        "Caixas personalizadas sob medida para presentes e produtos exclusivos",
+        "Display transparente em acrílico, perfeito para exposição de produtos e comunicação visual"
+    ]
 ];
 
 const grids = document.querySelectorAll(".square-grid");
