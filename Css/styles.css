@@ -897,8 +897,8 @@ body {
 .square-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5.7vw 9vw;
-    padding: 1vw 3vw;
+    gap: 3vw 9vw;
+    padding: 3vw 3vw;
 }
 
 .itemSquare {
@@ -954,7 +954,7 @@ body {
 
 .textSquares h3 {
     font-size: 1.5vw;
-    margin: 0 0 0.7vw 0;
+    margin: 0 0 2vw 0;
     white-space: nowrap;
 }
 
@@ -962,8 +962,9 @@ body {
     font-size: 0.85vw;
 }
 
-.textSquares button {
-    margin-top: 5vw;
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 4.2vw;
     padding: 0.6vw 1.2vw;
     font-size: 1vw;
     border-radius: 1.5vw;
@@ -972,9 +973,10 @@ body {
     color: #121212;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
-.textSquares button:hover {
+.whatsapp-button:hover {
     background-color: #aaff00;
 }
 
@@ -1609,7 +1611,7 @@ body {
     transition: all 0.3s ease;
     position: absolute;
     width: 99.45vw;
-    height: 800vw;
+    height: 788vw;
     z-index: -100;
     left: -10vw;
     top: 0vw;

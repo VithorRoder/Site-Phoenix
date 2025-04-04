@@ -61,6 +61,7 @@ grids.forEach((grid, categoriaIndex) => {
     const nomes = nomesCategorias[categoriaIndex];
     const imagens = imagensCategorias[categoriaIndex];
     const descricoes = descricoesCategorias[categoriaIndex];
+    const numeroWhatsapp = "5521982154339";
 
     for (let i = 0; i < nomes.length; i++) {
         const itemWrapper = document.createElement("div");
@@ -69,14 +70,10 @@ grids.forEach((grid, categoriaIndex) => {
         const square = document.createElement("div");
         square.className = "square";
 
-        //const span = document.createElement("span");
-        //span.textContent = nomes[i];
-
         const img = document.createElement("img");
         img.src = imagens[i];
         img.alt = nomes[i];
 
-        //square.appendChild(span);
         square.appendChild(img);
 
         const textDiv = document.createElement("div");
@@ -88,11 +85,14 @@ grids.forEach((grid, categoriaIndex) => {
         const p = document.createElement("p");
         p.textContent = descricoes[i];
 
-        // 🟢 Botão
-        const button = document.createElement("button");
+        const button = document.createElement("a");
         button.textContent = "Saiba mais";
+        button.className = "whatsapp-button";
+        const mensagem = `Olá! Gostaria de saber mais sobre o material: ${nomes[i]}`;
+        const link = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensagem)}`;
+        button.href = link;
+        button.target = "_blank";
 
-        // Montagem
         textDiv.appendChild(h3);
         textDiv.appendChild(p);
         textDiv.appendChild(button);
