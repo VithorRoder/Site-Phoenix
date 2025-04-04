@@ -995,9 +995,9 @@ body {
     background-color: #302f2f8f;
     z-index: 10;
     padding-top: 4.5vw;
-  }
-  
-  .sectionHeader h2 {
+}
+
+.sectionHeader h2 {
     font-size: 2.5vw;
     font-family: "Merriweather", serif;
     letter-spacing: 0.13vw;
@@ -1006,7 +1006,7 @@ body {
     padding-bottom: 0.5vw;
     padding-left: 2vw;
     margin-top: 0;
-  }
+}
 
 @media (max-width: 900px) {
     .containerSquares {
@@ -1367,10 +1367,10 @@ body {
 .loader {
     width: 15vw;
     height: 15vw;
-    position: absolute;
+    position: relative;
     transform: rotate(45deg);
-    top: 89.67%;
-    left: 14.3vw;
+    margin-left: 12.44vw;
+    margin-top: 4.22vw;
 }
 
 .loader:before,
@@ -1398,13 +1398,14 @@ body {
 }
 
 .map-container {
+    position: relative;
     width: 32vw;
     height: 23vw;
     border: 0.3vw solid #4a90e2;
     border-radius: 2vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    margin-top: -30.65vw;
+    margin-top: -31.5vw;
     margin-bottom: 10vw;
     margin-left: 46vw;
 }
@@ -1415,13 +1416,17 @@ body {
     display: block;
 }
 
-.map-container img {
+.mapImagem {
+    position: relative;
+}
+
+.mapImagem .mapTitleImg {
     position: absolute;
+    top: -39.5vw;
+    left: 58.7vw;
     width: 8vw;
     height: 8vw;
-    left: 58.5vw;
-    top: 85.975%;
-
+    z-index: 10;
 }
 
 .location {
@@ -1615,7 +1620,7 @@ body {
     transition: all 0.3s ease;
     position: absolute;
     width: 99.45vw;
-    height: 760vw;
+    height: 787vw;
     z-index: -50200;
     left: -10vw;
     top: 10.5vw;
