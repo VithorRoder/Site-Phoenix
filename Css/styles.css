@@ -448,7 +448,7 @@ body {
 }
 
 .parallax2 {
-    background-image: url('../Images/mule2.jpg');
+    background-image: url('../Images/Portfolio.webp');
     height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -907,10 +907,11 @@ body {
 }
 
 .square {
-    width: 13vw;
+    width: 12.5vw;
     height: 15vw;
-    background-color: #534541c4;
-    border-radius: 0.8vw;
+    border-radius: 1.5vw;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -925,8 +926,8 @@ body {
 
 .square img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
@@ -934,7 +935,7 @@ body {
 
 .square:hover {
     transform: translateY(-10px) rotate(7deg) scale(1.2);
-    background-color: #2bc9ce00;
+    background-color: lightgrey;
 }
 
 .square:hover img {
@@ -953,19 +954,24 @@ body {
 }
 
 .textSquares h3 {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     margin: 0 0 2vw 0;
     white-space: nowrap;
+    text-shadow:
+        0 0 15px rgba(255, 255, 255, 0.2),
+        0 0 25px rgba(255, 255, 255, 0.1),
+        0 0 35px rgba(255, 255, 255, 0.05);
 }
 
 .textSquares p {
-    font-size: 0.85vw;
+    font-size: 0.95vw;
+    opacity: 85%;
 }
 
 .whatsapp-button {
     display: inline-block;
-    margin-top: 4.2vw;
-    padding: 0.6vw 1.2vw;
+    margin-top: 3vw;
+    padding: 0.6vw 1.7vw;
     font-size: 1vw;
     border-radius: 1.5vw;
     border: none;
