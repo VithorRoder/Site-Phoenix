@@ -43,18 +43,6 @@ html {
     z-index: -5000;
 }
 
-.back02 {
-    backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.055);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    position: absolute;
-    width: 99.45vw;
-    height: 30vw;
-    z-index: -4999;
-    left: -10vw;
-}
-
 @media (max-width: 900px) {
     #bg-video {
         display: none;
@@ -175,8 +163,9 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 98.9vw;
+    width: 99.9vw;
     height: 8vw;
+    margin-left: -0.5vw;
     background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1620,8 +1609,8 @@ body {
     transition: all 0.3s ease;
     position: absolute;
     width: 99.45vw;
-    height: 787vw;
-    z-index: -50200;
+    height: 800vw;
+    z-index: -100;
     left: -10vw;
-    top: 10.5vw;
+    top: 0vw;
 }
