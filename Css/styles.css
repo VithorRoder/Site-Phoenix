@@ -114,23 +114,24 @@ body {
 
 .menu-toggle {
     display: none;
-    font-size: 8vw;
+    font-size: 13vw;
     color: white;
     cursor: pointer;
     position: absolute;
-    top: 20%;
+    width: 95vw;
+    top: 0.5vw
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .nav-menu {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 0vw;
         left: 0;
         width: 100%;
         background: transparent;
-        padding: 10px 0;
+        padding: 15vw 0 1vw 0;
         text-align: center;
     }
 
@@ -239,17 +240,17 @@ body {
 
 @media (min-width: 1201px) and (max-width: 1600px) {
     .fixed-logo {
-        width: 8.6vw;
-        height: 8.6vw;
+        width: 7.55vw;
+        height: 7.55vw;
         position: fixed;
-        bottom: 2.7vw;
+        bottom: 2.8vw;
         right: 2.7vw;
         z-index: 100;
     }
 
     .scrolling-logo {
-        width: 11vw;
-        height: 11vw;
+        width: 10vw;
+        height: 10vw;
         position: fixed;
         bottom: 1.5vw;
         right: 1.5vw;
@@ -305,13 +306,11 @@ body {
 
 @media (max-width: 900px) {
     .swiper-container {
-        position: relative;
-        width: 99.95vw;
-        left: 38vw;
-        top: -30vw;
-        transform: translateX(-50%);
+        position: absolute;
+        width: 95vw;
         overflow: hidden;
-        margin-bottom: 20vw;
+        margin-left: -7.5vw;
+        margin-top: 17vw;
     }
 
     .swiper-wrapper {
@@ -321,35 +320,29 @@ body {
     .swiper-slide {
         flex: 0 0 100%;
         max-width: 100%;
-        height: 100%;
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
         text-align: center;
     }
 
     .swiper-slide img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
     }
 
     .swiper-button-next,
     .swiper-button-prev {
         color: rgb(255, 255, 255);
-        width: 50vw;
-        height: 50vw;
         background-color: transparent;
-        border-radius: 50%;
         position: absolute;
-        top: 50%;
-        transform: translateY(-40%);
+        transform: translateY(-50%);
         z-index: 10;
-    }
-
-    .swiper-button-next {
-        right: 1vw;
-    }
-
-    .swiper-button-prev {
-        left: 1vw;
     }
 }
 
@@ -386,12 +379,11 @@ body {
 
 .parallax h1 {
     position: absolute;
-    top: 37vw;
+    top: 38vw;
     left: 40vw;
     white-space: nowrap;
     transform: translate(-50%, -50%);
     color: rgb(255, 255, 255);
-    font-size: 4.2vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     text-shadow:
@@ -404,36 +396,25 @@ body {
 }
 
 @media (max-width: 901px) {
-
     .parallax h1 {
         position: absolute;
-        top: 80vw;
-        left: -2.2vw;
+        top: 133vw;
+        width: 98vw;
         color: rgb(255, 255, 255);
-        font-size: 5.5vw;
         font-weight: bold;
         font-family: "Merriweather", serif;
         letter-spacing: 0.11vw;
+        white-space: normal;
+        align-items: center;
+        background-color: #1e6fbb85;
+        border: #000000;
+        border-radius: 5vw;
+        padding: 3vw;
         text-shadow:
-            0 0 15px rgba(255, 255, 255, 0.8),
-            0 0 25px rgba(255, 255, 255, 0.6),
-            0 0 35px rgba(255, 255, 255, 0.4);
-        animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
-
-    }
-
-    @keyframes floatText {
-        0% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-10px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
+            0 0 15px rgba(255, 255, 255, 0.35),
+            0 0 25px rgba(255, 255, 255, 0.25),
+            0 0 35px rgba(255, 255, 255, 0.15);
+        animation: blinkText 1.5s infinite alternate ease-in-out;
     }
 
     @keyframes blinkText {
@@ -653,7 +634,7 @@ body {
         margin-top: 90vw;
         width: 98vw;
         left: 50%;
-        top: 5vw;
+        top: 35vw;
         transform: translateX(-50%);
         overflow: hidden;
         margin-bottom: 10vw;
@@ -726,6 +707,11 @@ body {
     margin-right: 0.5vw;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
+    width: 99%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding-left: 1vw;
 }
 
 @media (max-width: 900px) {
@@ -740,7 +726,7 @@ body {
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 13vw;
+        margin-bottom: 17vw;
         opacity: 0.13;
         transform: translateY(40px);
     }
@@ -824,9 +810,14 @@ body {
     font-size: 1.2vw;
     opacity: 70%;
     margin-top: 2.5vw;
-    margin-left: 0.5vw;
+    margin-left: 1.3vw;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
+    width: 97%;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    padding-right: 2.5vw;
 }
 
 @media (max-width: 900px) {
@@ -841,7 +832,7 @@ body {
         transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 13vw;
+        margin-bottom: 17vw;
         opacity: 0.13;
         transform: translateY(40px);
     }
@@ -856,7 +847,7 @@ body {
         width: 58vw;
         height: 45vw;
         border-radius: 2vw;
-        margin-top: 5vw;
+        margin-top: 10vw;
     }
 
     .panelImpar .text {
@@ -1233,17 +1224,15 @@ body {
         width: 100%;
         padding: 5vw;
         margin-top: 3vw;
-    }
-
-    .orcamento-title {
-        position: static;
-        text-align: center;
-        font-size: 6vw;
-        margin-bottom: 5vw;
+        box-sizing: border-box;
+        margin-left: auto; 
+        margin-right: auto; 
     }
 
     .orcamento-form {
-        width: 80%;
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
         gap: 3vw;
         margin-bottom: 8vw;
     }
@@ -1254,125 +1243,7 @@ body {
         padding: 4vw;
         border-radius: 2.5vw;
         font-size: 4vw;
-    }
-
-    .orcamento-form input {
-        height: 10vw;
-    }
-
-    .orcamento-form textarea {
-        height: 20vw;
-        margin-top: 4.5vw;
-    }
-
-    .buttonOrcamento {
-        font-size: 5vw;
-        padding: 3vw 5vw;
-        border-radius: 1.5vw;
-        margin-top: 10vw;
-    }
-}
-
-@media (min-width: 901px) {
-    .trinta {
-        display: none;
-    }
-}
-
-@media (max-width: 901px) {
-    .trinta {
-        position: absolute;
-        color: #000000;
-        font-size: larger;
-        width: 85vw;
-        height: 85vw;
-        z-index: 5;
-        margin-top: 110vw;
-        left: -2.9vw;
-    }
-
-    .trinta h1 {
-        position: absolute;
-        color: rgb(255, 255, 255);
-        font-size: 5vw;
-        left: 1.1vw;
-        font-weight: bold;
-        font-family: "Merriweather", serif;
-        letter-spacing: 0.11vw;
-        text-shadow:
-            0 0 15px rgba(255, 255, 255, 0.8),
-            0 0 25px rgba(255, 255, 255, 0.6),
-            0 0 35px rgba(255, 255, 255, 0.4);
-        border-radius: 10px;
-        animation: floatText 3s infinite ease-in-out, blinkText 1.5s infinite alternate ease-in-out;
-    }
-
-    @keyframes floatText {
-        0% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-10px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes blinkText {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0.85;
-        }
-    }
-}
-
-@media (max-width: 901px) {
-
-    .arrow-container {
-        position: absolute;
-        left: 50%;
-        top: 150vw;
-        bottom: 20px;
-        transform: translateX(-50%);
-    }
-
-    .arrow {
-        width: 0;
-        height: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-top: 20px solid white;
-        animation: floatTextArrow 3s infinite ease-in-out, blinkTextArrow 1.5s infinite alternate ease-in-out;
-    }
-
-    @keyframes floatTextArrow {
-        0% {
-            transform: translateY(0);
-        }
-
-        50% {
-            transform: translateY(-30px);
-        }
-
-        100% {
-            transform: translateY(0);
-        }
-    }
-
-    @keyframes blinkTextArrow {
-        0% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 0.85;
-        }
+        box-sizing: border-box;
     }
 }
 
@@ -1381,7 +1252,7 @@ body {
     height: 15vw;
     position: relative;
     transform: rotate(45deg);
-    margin-left: 12.44vw;
+    margin-left: 12.1vw;
     margin-top: 4.22vw;
 }
 
