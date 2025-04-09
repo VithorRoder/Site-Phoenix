@@ -437,13 +437,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .parallax2 h1 {
-    position: absolute;
-    margin-left: 40vw;
-    margin-top: 12.5vw;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
+    margin: 0;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: bold;
@@ -457,33 +461,25 @@ body {
 
 @media (max-width: 900px) {
     .parallax2 {
-        position: relative;
-        height: 45vw;
+        height: 55vw;
         width: 98vw;
         left: 50%;
         top: 5vw;
         transform: translateX(-50%);
-        overflow: hidden;
         margin-bottom: 10vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .parallax2 h1 {
         color: rgb(255, 255, 255);
         font-size: 10vw;
-        font-weight: bold;
-        font-family: "Eurostile", sans-serif;
+        font-family: "Merriweather", sans-serif;
         text-shadow:
-            0 0 45px rgb(0, 0, 0),
-            0 0 55px rgb(0, 0, 0),
-            0 0 65px rgb(0, 0, 0);
-        width: auto;
-        text-align: center;
-        margin-left: 6.75em;
-        margin-top: 3.3em;
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0);
+        background-color: #2e2b2b80;
+        border-radius: 5vw;
+        width: 90%;
     }
 }
 
@@ -547,19 +543,22 @@ body {
 
 .parallax4 {
     background-image: url('../Images/NossaLocalizacao.png');
-    height: 22vw;
+    height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin-top: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .parallax4 h1 {
-    position: absolute;
-    margin-left: 40vw;
-    margin-top: 11.5vw;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
+    margin: 0;
     color: rgb(0, 0, 0);
     font-size: 4vw;
     font-weight: bold;
@@ -573,34 +572,27 @@ body {
 
 @media (max-width: 900px) {
     .parallax4 {
-        position: relative;
-        height: 45vw;
+        height: 55vw;
         width: 98vw;
         left: 50%;
         top: 5vw;
         transform: translateX(-50%);
-        overflow: hidden;
-        margin-bottom: 10vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-bottom: 15vw;
+        margin-top: 15vw;
     }
 
     .parallax4 h1 {
         color: rgb(255, 255, 255);
-        font-size: 11vw;
-        font-weight: bold;
-        font-family: "Merriweather", serif;
-        letter-spacing: 0.11vw;
+        font-size: 9vw;
+        font-family: "Merriweather", sans-serif;
         text-shadow:
-            0 0 55px rgb(0, 0, 0),
-            0 0 65px rgb(0, 0, 0),
-            0 0 75px rgb(0, 0, 0);
-        width: auto;
-        text-align: center;
-        margin-left: 5.2em;
-        margin-top: 4em;
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0);
+        white-space: nowrap;
+        background-color: #2e2b2b80;
+        border-radius: 5vw;
+        padding: 3vw;
     }
 }
 
@@ -611,12 +603,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .sobre h1 {
-    margin-left: 40vw;
-    margin-top: 12.5vw;
-    transform: translate(-50%, -50%);
+    margin: 0;
+    transform: none;
     color: rgb(0, 0, 0);
     font-size: 5.2vw;
     font-weight: bold;
@@ -626,24 +622,17 @@ body {
         0 0 25px rgba(255, 255, 255, 0.8),
         0 0 35px rgba(255, 255, 255, 0.6),
         0 0 45px rgba(255, 255, 255, 0.4);
+    text-align: center;
 }
 
 @media (max-width: 900px) {
     .sobre {
-        position: relative;
-        background-image: url('../Images/bg_sobre45.png');
         height: 55vw;
-        margin-top: 90vw;
         width: 98vw;
+        margin: 120vw auto 55vw auto;
         left: 50%;
         top: 35vw;
         transform: translateX(-50%);
-        overflow: hidden;
-        margin-bottom: 40vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
     }
 
     .sobre h1 {
@@ -653,14 +642,14 @@ body {
         font-family: "Merriweather", serif;
         letter-spacing: 0.11vw;
         text-shadow:
-            0 0 45px rgb(0, 0, 0),
-            0 0 55px rgb(0, 0, 0),
-            0 0 65px rgb(0, 0, 0);
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0),
+            0 0 2vw rgb(0, 0, 0);
         width: auto;
-        text-align: center;
         white-space: nowrap;
-        margin-left: 6.75em;
-        margin-top: 1.3em;
+        background-color: #2e2b2b80;
+        border-radius: 5vw;
+        padding: 3vw;
     }
 }
 
@@ -898,7 +887,7 @@ body {
 
 .column h2 {
     font-size: 2.5vw;
-    font-family: "Merriweather", serif;
+    font-family: \"Merriweather\", serif;
     letter-spacing: 0.11vw;
     margin-bottom: 3vw;
     border-bottom: 5px solid #ffffff;
@@ -1015,87 +1004,81 @@ body {
 
 .sectionHeader h2 {
     font-size: 2.5vw;
-    font-family: "Merriweather", serif;
+    font-family: \"Merriweather\", serif;
     letter-spacing: 0.13vw;
     margin-bottom: 3vw;
     border-bottom: 0.5vw solid #ffffff;
-    padding-bottom: 0.5vw;
+    padding-bottom: 0.3vw;
     padding-left: 2vw;
     margin-top: 0;
 }
 
 @media (max-width: 900px) {
     .containerSquares {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
         justify-content: center;
-        margin-left: 1.95em;
-        margin-top: 3em;
-        margin-bottom: 3em;
+        width: 68%;
     }
 
-    .column01 {
-        width: 92%;
-        margin-bottom: 7em;
+    .column {
+        width: 80%;
+        margin-left: 25vw;
     }
 
-    .column02 {
-        width: 92%;
-        margin-bottom: 6em;
-    }
-
-    .column03 {
-        width: 92%;
-        margin-bottom: 5em;
-    }
-
-    .column04 {
-        width: 92%;
-        margin-bottom: 1.7em;
-    }
-
-    .column01 h2 {
-        font-size: 2.5em;
+    .column h2,
+    .column03 h2,
+    .sectionHeader h2 {
+        font-size: 7.5vw;
         margin-bottom: 1em;
-    }
-
-    .column02 h2 {
-        font-size: 2.5em;
-        margin-bottom: 1em;
+        margin-left: 2vw;
     }
 
     .column03 h2 {
-        font-size: 2.5em;
-        margin-bottom: 1em;
+        font-size: 9vw;
     }
 
     .column04 h2 {
-        font-size: 2.5em;
-        margin-bottom: 1em;
+        font-size: 9vw;
     }
 
     .square-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 2fr);
-        gap: 5vw;
+        grid-template-columns: 1fr;
+        gap: 15vw;
         justify-content: center;
     }
 
     .square {
-        position: relative;
-        overflow: hidden;
-        width: 30vw;
-        height: 30vw;
-        background-color: #ff5733;
-        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-        border-radius: 2.5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1em;
-        color: white;
-        font-weight: bold;
-        cursor: pointer;
+        width: 40vw;
+        height: 45vw;
+        font-size: 4vw;
+        border-radius: 4vw;
+    }
+
+    .textSquares {
+        width: 50%;
+        margin-left: 5vw;
+        padding: 4vw 0;
+        text-align: center;
+    }
+
+    .textSquares h3 {
+        font-size: 5.2vw;
+        margin-bottom: 3vw;
+    }
+
+    .textSquares p {
+        font-size: 3vw;
+    }
+
+    .whatsapp-button {
+        font-size: 3vw;
+        padding: 3vw 7vw;
+        border-radius: 5vw;
+        margin-top: 10vw;
+    }
+
+    .sectionHeader {
+        padding-top: 15vw;
     }
 }
 
@@ -1266,7 +1249,7 @@ body {
     position: relative;
     transform: rotate(45deg);
     margin-left: 12.1vw;
-    margin-top: 4.22vw;
+    margin-top: 3vw;
 }
 
 .loader:before,
@@ -1290,6 +1273,34 @@ body {
     to {
         transform: perspective(336px) translateZ(168px);
         opacity: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .loader {
+        width: 15vw;
+        height: 15vw;
+        position: relative;
+        transform: rotate(45deg);
+        margin-left: 37vw;
+        margin-top: 8vw;
+    }
+
+    .loader:before,
+    .loader:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 50% 50% 0 50%;
+        background: #0000;
+        background-image: radial-gradient(circle 2.3vw at 50% 50%, #0000 94%, #ff4747);
+        height: 9vw;
+        width: 9vw;
+    }
+
+    .loader:after {
+        animation: pulse-ytk0dhmd 1s infinite;
+        transform: perspective(336px) translateZ(0px);
     }
 }
 
@@ -1323,6 +1334,28 @@ body {
     width: 8vw;
     height: 8vw;
     z-index: 10;
+}
+
+@media (max-width: 900px) {
+    .map-container {
+        width: 90vw;
+        height: 60vw;
+        border: 4px solid #4a90e2;
+        border-radius: 4vw;
+        margin: 11vw auto;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        margin-left: -5vw;
+        margin-bottom: 18vw;
+    }
+
+    .mapImagem .mapTitleImg {
+        position: absolute;
+        top: -88vw;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 14vw;
+        height: 14vw;
+    }
 }
 
 .location {
@@ -1369,8 +1402,38 @@ body {
 .horario {
     margin-top: 0.9vw;
     padding-top: 0.7vw;
-    border-top: 0.05vw solid #e3f0ff;
+    border-top: 0.2vw solid #e3f0ff;
     font-size: 0.7vw;
+}
+
+@media (max-width: 900px) {
+    .location {
+        width: 90vw;
+        height: auto;
+        border-radius: 4vw;
+        margin-left: -5vw;
+        border: 1vw solid #4a90e2;
+    }
+
+    .location h1 {
+        font-size: 8vw;
+        margin-bottom: 7vw;
+        margin-top: 3vw;
+        margin-left: 0;
+        white-space: nowrap;
+    }
+
+    .location p {
+        font-size: 4vw;
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    .horario {
+        font-size: 3vw;
+        margin-top: 3vw;
+        padding-top: 2vw;
+    }
 }
 
 .card {
