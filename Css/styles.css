@@ -41,7 +41,7 @@ html {
 }
 
 body {
-    background-color: #000000;
+    background: rgba(10, 10, 10, 0.970);
     background-size: contain;
     color: rgb(255, 255, 255);
     text-align: center;
