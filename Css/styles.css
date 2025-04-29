@@ -50,6 +50,8 @@ body {
     transition: background 0.5s ease-in-out;
     z-index: 1000;
     background-color: #ccd7db;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
 .nav-menu {
@@ -59,18 +61,34 @@ body {
 }
 
 .nav-menu li {
-    margin: 0 1.4vw;
+    margin: 0 2.5vw;
+    position: relative;
+}
+
+.nav-menu li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -2.7vw;
+    width: 2px;
+    height: 100%;
+    background-color: black;
 }
 
 .nav-menu a {
+    position: relative;
+    padding: 1vw;
     text-decoration: none;
-    color: rgb(3, 3, 3);
-    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+    font-size: 1.3vw;
     transition: 0.3s;
+    font-family: "Merriweather", serif;
 }
 
 .nav-menu a:hover {
-    color: #52a4ca;
+    color: white;
+    background-color: #5f5b5b;
+    border-radius: 0.5vw;
 }
 
 .menu-toggle {
@@ -669,7 +687,7 @@ body {
 }
 
 .panelPar .text p {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     opacity: 70%;
     margin-top: 2.5vw;
     margin-right: 0.5vw;
@@ -680,6 +698,7 @@ body {
     align-self: center;
     align-content: center;
     padding-left: 1vw;
+    color: #000000;
 }
 
 @media (max-width: 900px) {
@@ -776,10 +795,11 @@ body {
         0 0 15px rgba(255, 255, 255, 0.2),
         0 0 25px rgba(255, 255, 255, 0.1),
         0 0 35px rgba(255, 255, 255, 0.05);
+        color: #000000;
 }
 
 .panelImpar .text p {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     opacity: 70%;
     margin-top: 2.5vw;
     margin-left: 1.3vw;
@@ -790,6 +810,7 @@ body {
     align-self: center;
     align-content: center;
     padding-right: 2.5vw;
+    color: #000000;
 }
 
 @media (max-width: 900px) {
