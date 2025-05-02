@@ -616,6 +616,16 @@ body {
     z-index: -10;
 }
 
+.background02 {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
+    position: absolute;
+    height: 590vw;
+    width: 100%;
+    top: 70vw;
+    z-index: -10;
+}
+
 @media (max-width: 900px) {
     .background01 {
         height: 230vw;
