@@ -21,7 +21,8 @@
             <li><a href="#endereco">Nossa Localização</a></li>
             <li><a href="#orcamento">Contato</a></li>
         </ul>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <div class="menu-toggle menu-mobile" onclick="toggleMenu()">☰</div>
+        <button class="menu-desktop" onclick="toggleMenu()"><span>Menu</span></button>
     </header>
 
     <div id="home" class="parallax">
@@ -115,6 +116,8 @@
             Explore nossas Especialidades
         </h1>
     </div>
+
+    <div class="background02"></div>
 
     <div class="containerSquares">
         <div class="column column01">
@@ -303,6 +306,7 @@
     </script>
 
     <!-- Vinculando o arquivo JS -->
+    <script src="JavaScript/menuShow.js"></script>
     <script src="JavaScript/rotateLogo.js"></script>
     <script src="JavaScript/swiper.js"></script>
     <script src="JavaScript/handleScrollPar.js"></script>
@@ -313,7 +317,6 @@
     <script src="JavaScript/attOpcoes.js"></script>
     <script src="JavaScript/headerMobile.js"></script>
     <script src="JavaScript/swiperImg.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 </body>
