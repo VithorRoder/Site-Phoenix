@@ -5,18 +5,23 @@ const header = document.getElementById('header');
 let menuOpen = false;
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
+    const isMobile = window.innerWidth <= 768;
 
-        navMenu.classList.add('hidden');
-        navMenu.classList.remove('show');
+    if (window.scrollY > 50) {
+        const isMobile = window.innerWidth <= 768;
+
+        if (!isMobile) {
+            header.classList.add('scrolled');
+            navMenu.classList.add('hidden');
+            navMenu.classList.remove('show');
+        }
 
         if (menuOpen) {
             menuOpen = false;
             header.classList.remove('menu-open');
         }
 
-        if (window.innerWidth <= 768) {
+        if (isMobile) {
             menuToggleMobile.classList.add('show');
             menuToggleDesktop.classList.remove('show');
         } else {
