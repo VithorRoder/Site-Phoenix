@@ -547,7 +547,7 @@ body {
 }
 
 .parallax3 {
-    background-image: url('../Images/contato.jpg');
+    background-image: url('../Images/contato.webp');
     height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -604,7 +604,7 @@ body {
 }
 
 .parallax4 {
-    background-image: url('../Images/NossaLocalizacao.png');
+    background-image: url('../Images/NossaLocalizacao.webp');
     height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
@@ -659,7 +659,7 @@ body {
 }
 
 .sobre {
-    background-image: url('../Images/bg_sobre.png');
+    background-image: url('../Images/bg_sobre.webp');
     height: 25vw;
     background-position: center;
     background-repeat: no-repeat;
