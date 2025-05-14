@@ -1,8 +1,8 @@
 const opcoesPorCategoria = {
-    comunicacao: ["Banner", "Adesivo", "Placa", "Letreiro"],
-    grafica: ["Cartão de Visita", "Panfleto", "Folder"],
-    offset: ["Revista", "Livro", "Catálogo"],
-    diversos: ["Brindes", "Personalizados", "Outro"]
+    comunicacao: ["Adesivos", "Lonas", "Placa de PS", "Outros"],
+    grafica: ["Cartão de Visita", "Panfleto", "Folder", "Apostilas", "Outros"],
+    offset: ["Revista", "Cartão de Visita", "Catálogo", "Outros"],
+    diversos: ["Camisas", "Canecas", "Crachás","Outros"]
 };
 
 function atualizarOpcoes() {
