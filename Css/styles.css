@@ -46,13 +46,14 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    padding: 1.5vw 1vw;
+    padding: 1vw 1vw;
     background-color: #ccd7db;
     transition: background 0.5s ease-in-out;
     z-index: 1000;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     position: fixed;
+    white-space: nowrap;
 }
 
 .nav-menu {
