@@ -47,7 +47,7 @@ body {
     top: 0;
     left: 0;
     padding: 1vw 1vw;
-    background-color: #ccd7db;
+    background-color: #f0f1f1c7;
     transition: background 0.5s ease-in-out;
     z-index: 1000;
     border-top: 2px solid black;
@@ -82,7 +82,7 @@ body {
     padding: 1vw;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 1.3vw;
+    font-size: 1.1vw;
     transition: 0.3s;
     font-family: "Merriweather", serif;
 }
@@ -93,125 +93,16 @@ body {
     border-radius: 0.5vw;
 }
 
-.menu-toggle.menu-mobile {
-    display: none;
-    font-size: 13vw;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    position: fixed;
-    top: 0.5vw;
-    right: 2vw;
-    z-index: 1001;
-}
-
-@keyframes fadeSlideIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.menu-desktop {
-    align-items: center;
-    background-image: linear-gradient(144deg, #295fc4, #af1863 50%, #e2d51e);
-    border: 0;
-    border-radius: 1vw;
-    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-    box-sizing: border-box;
-    color: #ffffff;
-    display: flex;
-    font-size: 1.7vw;
-    justify-content: center;
-    line-height: 1em;
-    padding: 3px;
-    text-decoration: none;
-    user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    cursor: pointer;
-    transition: all 0.3s;
-    position: fixed;
-    top: 0.75vw;
-    left: 90vw;
-    z-index: 1001;
-    display: none;
-    height: 3.5vw;
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.menu-desktop.show {
-    display: block;
-    animation: fadeSlideIn 0.4s ease forwards;
-}
-
-.menu-desktop span {
-    padding: 1vw 1vw;
-    border-radius: 1vw;
-    height: 3.5vw;
-    transition: 300ms;
-}
-
-.menu-desktop:hover span {
-    background: none;
-}
-
-.menu-desktop:active {
-    transform: scale(0.9);
-}
-
-.header.menu-open .menu-desktop {
-    background-image: linear-gradient(144deg, #00c853, #64dd17 50%, #aeea00);
-}
-
-.nav-menu.hidden {
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(-20px);
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.nav-menu.show {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translateY(0);
-    transition: opacity 0.3s, transform 0.3s;
-}
-
-.header.menu-open {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-color: #ccd7db;
-}
-
-.header.scrolled {
-    background: #ffffff00;
-    border-top: 2px solid rgba(0, 0, 0, 0);
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-}
-
-.header.scrolled.menu-open {
-    background-color: #ccd7db !important;
-    border-top: 2px solid black !important;
-    border-bottom: 2px solid black !important;
-}
-
 @media (max-width: 900px) {
 
     .header {
-        height: 15vw;
+        height: 11vw;
     }
 
     .nav-menu a {
-        font-size: 2.55vw;
+        font-size: 2.65vw;
     }
-    
+
 }
 
 .footer {
@@ -446,7 +337,7 @@ body {
 
 .parallax h1 {
     position: absolute;
-    top: 35vw;
+    top: 37vw;
     left: 50vw;
     white-space: nowrap;
     transform: translate(-50%, -50%);
@@ -671,16 +562,6 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-}
-
-.background01 {
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-    position: absolute;
-    height: 70vw;
-    width: 100%;
-    top: 5vw;
-    z-index: -10;
 }
 
 .background02 {
