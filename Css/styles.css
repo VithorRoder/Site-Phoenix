@@ -104,7 +104,7 @@ body {
     .header {
         height: 11vw;
         width: 99%;
-        top: 0;
+        top: 2.5vw;
         left: 0.37vw;
     }
 
@@ -1696,24 +1696,8 @@ body {
     left: 70vw;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .forma {
-        max-width: 40vw;
-        opacity: 0.1;
-    }
-
-    .forma01 {
-        top: -10vw;
-        left: -10vw;
-    }
-
-    .forma02 {
-        top: -8vw;
-        right: -15vw;
-    }
-
-    .forma03 {
-        bottom: -10vw;
-        left: 5vw;
+        display: none;
     }
 }
