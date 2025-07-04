@@ -221,10 +221,11 @@ body {
 
 .swiper-container {
     position: absolute;
-    top: 6.5vw;
+    top: 8vw;
     left: 50%;
     transform: translateX(-50%);
-    width: 75vw;
+    width: 87vw;
+    height: auto;
     overflow: hidden;
     border-radius: 1vw;
 }
@@ -242,7 +243,7 @@ body {
 
 .swiper-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     display: block;
     border-radius: 1vw;
@@ -346,7 +347,7 @@ body {
 
 .parallax h1 {
     position: absolute;
-    top: 37vw;
+    top: 38.5vw;
     left: 50vw;
     white-space: nowrap;
     transform: translate(-50%, -50%);
