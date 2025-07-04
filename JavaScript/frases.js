@@ -12,9 +12,9 @@ setInterval(() => {
         textElement.textContent = messages[index];
         textElement.style.opacity = 1;
         if (window.innerWidth <= 901) {
-            textElement.style.fontSize = index === 1 ? "6.5vw" : "7.5vw";
+            textElement.style.fontSize = index === 1 ? "6vw" : "7.5vw";
         } else {
-            textElement.style.fontSize = index === 1 ? "3.4vw" : "4.2vw";
+            textElement.style.fontSize = index === 1 ? "3.2vw" : "4.2vw";
         }
     }, 500);
 }, 4000);

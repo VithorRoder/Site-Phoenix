@@ -352,7 +352,7 @@ body {
     white-space: nowrap;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
-    font-size: 4.2vw;
+    font-size: 1vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     text-shadow:
@@ -414,7 +414,7 @@ body {
     transform: none;
     margin: 0;
     color: rgb(0, 0, 0);
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
@@ -466,7 +466,7 @@ body {
     margin: 0;
     transform: none;
     color: rgb(0, 0, 0);
-    font-size: 5.2vw;
+    font-size: 5.3vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
@@ -524,7 +524,7 @@ body {
     transform: none;
     margin: 0;
     color: rgb(0, 0, 0);
-    font-size: 4vw;
+    font-size: 6vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
@@ -599,7 +599,7 @@ body {
     margin: 0;
     transform: none;
     color: rgb(0, 0, 0);
-    font-size: 5.2vw;
+    font-size: 6vw;
     font-weight: bold;
     font-family: "Merriweather", serif;
     letter-spacing: 0.11vw;
