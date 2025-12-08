@@ -6,8 +6,16 @@
     font-family: Arial, sans-serif;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 html {
     scroll-behavior: smooth;
+    max-width: 100vw;
 }
 
 @font-face {
@@ -34,17 +42,20 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 100vw;
+    width: 100%;
     margin: 0 auto;
     overflow-x: hidden;
     z-index: 100;
+    box-sizing: border-box;
 }
 
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99%;
+    width: 98%;
+    max-width: 98vw;
     height: 4vw;
     padding: 1vw;
     background-color: #f0f1f1c7;
@@ -57,9 +68,11 @@ body {
     border-radius: 1vw;
     position: fixed;
     top: 0.2vw;
-    left: 0.47vw;
+    left: 0;
+    right: 0;
     margin: 0 auto;
     white-space: nowrap;
+    box-sizing: border-box;
 }
 
 .nav-menu {
@@ -103,9 +116,13 @@ body {
 
     .header {
         height: 11vw;
-        width: 99%;
-        top: 2.5vw;
-        left: 0.37vw;
+        width: 98%;
+        max-width: 98%;
+        top: 2.6vw;
+        left: 0.97vw;
+        right: 0;
+        margin: 0;
+        box-sizing: border-box;
     }
 
     .nav-menu a {
@@ -118,9 +135,10 @@ body {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 99.9vw;
+    width: 100%;
+    max-width: 100vw;
     height: 7vw;
-    margin-left: -0.5vw;
+    margin-left: 0;
     background-color: rgba(0, 0, 0, 0.822);
     background-size: cover;
     background-repeat: no-repeat;
@@ -131,6 +149,7 @@ body {
     font-size: 1vw;
     overflow: hidden;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .footer p {
@@ -149,6 +168,10 @@ body {
         align-items: center;
         justify-content: center;
         padding: 4vw 2vw;
+        width: 100%;
+        max-width: 100vw;
+        margin-left: 0;
+        box-sizing: border-box;
     }
 
     .footer p {
@@ -268,12 +291,14 @@ body {
     .swiper-container-mobile {
         position: absolute;
         width: 90vw;
+        max-width: 100vw;
         overflow: hidden;
         left: 50%;
         transform: translateX(-50%);
         margin-top: 20vw;
         border-radius: 4vw;
         border: #000000;
+        box-sizing: border-box;
     }
 
     .swiper-wrapper {
@@ -1368,11 +1393,13 @@ body {
 @media (max-width: 900px) {
     .map-container {
         width: 90vw;
+        max-width: calc(100vw - 4vw);
         height: 75vw;
         border: 4px solid #4a90e2;
         border-radius: 4vw;
         margin: 15vw auto;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
     }
 
     .mapImagem .mapTitleImg {
@@ -1436,11 +1463,14 @@ body {
 @media (max-width: 900px) {
     .location {
         width: 90vw;
+        max-width: calc(100vw - 4vw);
         height: auto;
         border-radius: 4vw;
         border: 1vw solid #4a90e2;
         margin-bottom: 10vw;
-        margin-left: 5vw;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
     }
 
     .location h1 {
@@ -1448,7 +1478,8 @@ body {
         margin-bottom: 7vw;
         margin-top: 3vw;
         margin-left: 0;
-        white-space: nowrap;
+        white-space: normal;
+        word-wrap: break-word;
     }
 
     .location p {
