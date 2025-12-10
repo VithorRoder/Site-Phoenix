@@ -1177,16 +1177,6 @@ body {
     display: inline-block;
 }
 
-.orcamento-form h2::after {
-    content: "";
-    position: absolute;
-    left: 0.2vw;
-    bottom: 0.9vw;
-    width: 110%;
-    height: 1px;
-    background-color: #0072b1;
-}
-
 .buttonOrcamento {
     position: relative;
     font-size: 1.2vw;
