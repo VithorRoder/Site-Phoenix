@@ -1,5 +1,21 @@
-RewriteEngine On
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/index\.php/sobre-nos/?$
+    RewriteRule ^(.*)$ https://phoenixgrafica.com/ [R=301,L]
+</IfModule>
 
-# Redireciona o link antigo para o novo (301 permanente)
-RewriteCond %{REQUEST_URI} ^/index\.php/sobre-nos/?$
-RewriteRule ^(.*)$ https://phoenixgrafica.com/ [R=301,L]
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|php)$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=3600, must-revalidate"
+    </FilesMatch>
+
+    <FilesMatch "\.(jpe?g|png|gif|webp|svg|ico)$">
+        Header set Cache-Control "max-age=604800, public"
+    </FilesMatch>
+</IfModule>
