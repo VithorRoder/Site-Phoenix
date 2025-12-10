@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# Redireciona o link antigo para o novo (301 permanente)
+RewriteCond %{REQUEST_URI} ^/index\.php/sobre-nos/?$
+RewriteRule ^(.*)$ https://phoenixgrafica.com/ [R=301,L]
