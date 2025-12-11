@@ -1247,16 +1247,6 @@ body {
         left: 0.7vw;
     }
 
-    .orcamento-form h2::after {
-        content: "";
-        position: absolute;
-        left: -5.4vw;
-        bottom: 0.9vw;
-        width: 116.5%;
-        height: 1.5px;
-        background-color: #000000;
-    }
-
     .orcamento-form input {
         width: 100%;
         padding: 5vw;
